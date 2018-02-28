@@ -57,14 +57,20 @@ def webhook():
 
 def send_message(recipient_id, message_text):
 
+#       vitor
     mkm = requests.get("https://jsonplaceholder.typicode.com/posts/1", params={}, headers={
         "Content-Type": "application/json"
     }, data={})
     if mkm.status_code != 200:
         log(r.status_code)
         log(r.text)
-    etv = mkm.response.get_json
-    message_text = message_text + etv[body]
+    etv = mkm.get_json
+    tve = resquest.data.get_json
+    vet = mkm.request.data.get_json
+    vavet = message_text + vet[body]
+    log("response is mkm.get_json={one}; resquest.data.get_json = {two};  mkm.request.data.get_json= {three}; message_text + vet[body]={four}".
+        format(one=etv, two=tve, three=vet, four=vavet))
+#   end vitor
 #       intact -v-
     log("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
 
