@@ -99,22 +99,15 @@ def send_message(recipient_id, message_text):
                     "title":"Welcome!",
                     "image_url":"https://images.pexels.com/photos/287487/pexels-photo-287487.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
                     "subtitle":"We have the right explosion for everyone.",
-                    "default_action": {
-                      "type": "web_url",
-                      "url": "https://myfriendsinportugal.com/",
-                      "messenger_extensions": "false",
-                      "webview_height_ratio": "tall",
-                      "fallback_url": "https://myfriendsinportugal.com/"
-                    },
                     "buttons":[
                       {
                         "type":"web_url",
-                        "url":"https://myfriendsinportugal.com",
+                        "url":"https://www.messenger.com/",
                         "title":"View Website"
                       },{
-                        "type":"postback",
-                        "title":"Start Chatting",
-                        "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                        "type":"web_url",
+                        "url":"https://www.messenger.com/",
+                        "title":"View Website"
                       }              
                     ]      
                   }
