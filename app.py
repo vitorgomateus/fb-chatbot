@@ -5,6 +5,7 @@ from datetime import datetime
 
 import requests
 from flask import Flask, request
+from funcao import send_message
 
 app = Flask(__name__)
 
