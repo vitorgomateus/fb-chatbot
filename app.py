@@ -108,6 +108,20 @@ def send_message(recipient_id, message_text):
                         "type":"web_url",
                         "url":"https://www.messenger.com/",
                         "title":"View Website"
+                      },
+                      {
+                    "title":"Welcome!",
+                    "image_url":"https://images.pexels.com/photos/287487/pexels-photo-287487.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
+                    "subtitle":"We have the right explosion for everyone.",
+                    "buttons":[
+                      {
+                        "type":"web_url",
+                        "url":"https://www.messenger.com/",
+                        "title":"View Website"
+                      },{
+                        "type":"web_url",
+                        "url":"https://www.messenger.com/",
+                        "title":"View Website"
                       }              
                     ]      
                   }
