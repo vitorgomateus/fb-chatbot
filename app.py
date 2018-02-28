@@ -102,7 +102,7 @@ def send_message(recipient_id, message_text):
                     "default_action": {
                       "type": "web_url",
                       "url": "https://myfriendsinportugal.com/",
-                      "messenger_extensions": false,
+                      "messenger_extensions": "false",
                       "webview_height_ratio": "tall",
                       "fallback_url": "https://myfriendsinportugal.com/"
                     },
