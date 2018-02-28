@@ -108,7 +108,7 @@ def send_message(recipient_id, message_text):
                             "type":"web_url",
                             "url":"https://www.messenger.com/",
                             "title":"View Website"
-                          },              
+                          }            
                     ]      
                   },
                   {
@@ -124,7 +124,7 @@ def send_message(recipient_id, message_text):
                             "type":"web_url",
                             "url":"https://www.messenger.com/",
                             "title":"View Website"
-                          },              
+                          }              
                     ]      
                   }
                 ]
