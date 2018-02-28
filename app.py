@@ -19,7 +19,7 @@ def verify():
             return "Verification token mismatch", 403
         return request.args["hub.challenge"], 200
 
-    return "Hello earth, changes have been made!!!", 200
+    return "Hello earth, it's alive!!!!", 200
 
 
 @app.route('/', methods=['POST'])
@@ -41,7 +41,7 @@ def webhook():
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
 
-                    send_message(sender_id, "<html><head><title>My Awesome Webview</title></head></html>")
+                    send_message(sender_id, "I'm okay.")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
@@ -71,6 +71,11 @@ def send_message(recipient_id, message_text):
     # log("response is mkm.get_json={one}; resquest.data.get_json = {two};  mkm.request.data.get_json= {three}; message_text + vet[body]={four}".
     #     format(one=etv, two=tve, three=vet, four=vavet))
 #   end vitor
+
+
+
+
+
 #       intact -v-
     log("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
 
@@ -84,9 +89,39 @@ def send_message(recipient_id, message_text):
         "recipient": {
             "id": recipient_id
         },
-        "message": {
-            "text": message_text
-        }
+        "message":{
+            "attachment":{
+              "type":"template",
+              "payload":{
+                "template_type":"generic",
+                "elements":[
+                   {
+                    "title":"Welcome!",
+                    "image_url":"https://images.pexels.com/photos/287487/pexels-photo-287487.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
+                    "subtitle":"We have the right explosion for everyone.",
+                    "default_action": {
+                      "type": "web_url",
+                      "url": "https://myfriendsinportugal.com/",
+                      "messenger_extensions": false,
+                      "webview_height_ratio": "tall",
+                      "fallback_url": "https://myfriendsinportugal.com/"
+                    },
+                    "buttons":[
+                      {
+                        "type":"web_url",
+                        "url":"https://myfriendsinportugal.com",
+                        "title":"View Website"
+                      },{
+                        "type":"postback",
+                        "title":"Start Chatting",
+                        "payload":"DEVELOPER_DEFINED_PAYLOAD"
+                      }              
+                    ]      
+                  }
+                ]
+              }
+            }
+  }
     })
     r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
     if r.status_code != 200:
