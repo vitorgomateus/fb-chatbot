@@ -34,8 +34,8 @@ def webhook():
     strdata = str(data)
     if "standby" in strdata:
         log("WE HAVE STANBY")
-    
-    time.sleep(300) 
+
+    #time.sleep(300) 
     if data["object"] == "page":
 
         for entry in data["entry"]:
