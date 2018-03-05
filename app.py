@@ -71,28 +71,8 @@ def webhook():
 
                     if messaging_event.get("request_thread_control"):  # ADMIN requested control
                         log("ADMIN REQUEST CONTROL sender_id={sendr}".format(sendr=sender_id_pass))
-
-                        passData = json.dumps({
-                            "recipient": {
-                                "id": sender_id_pass
-                            },
-                            "target_app_id": 263902037430900,
-                            "metadata": "pass_thread_control X test" 
-                        })
-                        passParams = {
-                            "access_token": os.environ["PAGE_ACCESS_TOKEN"],
-                        }
-                        passHeaders = {
-                            "Content-Type": "application/json"
-                        }
-                        hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
-                        log("HANDOVER SENT? CONVERSATION BE IN INBOX ?")
-                        if hj.status_code != 200:
-                            log(r.status_code)
-                            log(r.text)
-                        else:
-                            log("HANDOVER SUCCESS? CONVERSATION MUST BE IN INBOX")
-
+                        pass_thread_control(sender_id_pass)
+                        
                     if messaging_event.get("delivery"):  # delivery confirmation
                         pass
 
@@ -168,6 +148,27 @@ def send_message(recipient_id, message_text):
         log(r.status_code)
         log(r.text)
 
+def pass_thread_control(chatter_id):
+    passData = json.dumps({
+        "recipient": {
+            "id": chatter_id
+        },
+        "target_app_id": 263902037430900,
+        "metadata": "-X pass_thread_control X-" 
+    })
+    passParams = {
+        "access_token": os.environ["PAGE_ACCESS_TOKEN"],
+    }
+    passHeaders = {
+        "Content-Type": "application/json"
+    }
+    hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
+    
+    if hj.status_code != 200:
+        log(r.status_code)
+        log(r.text)
+    else:
+        log("HANDOVER")
 
 def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku
     try:
