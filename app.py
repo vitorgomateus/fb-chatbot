@@ -49,25 +49,39 @@ def webhook():
     # if data["object"] == "page":
 
     #   original
-    #     for entry in data["entry"]:
-    #         for messaging_event in entry["messaging"]:
+        for entry in data["entry"]:
+            for messaging_event in entry["messaging"]:
 
-    #             if messaging_event.get("message"):  # someone sent us a message
-    #                 pass
-    #                 #sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
-    #                 #recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
-    #                # message_text = messaging_event["message"]["text"]  # the message's text
+                if messaging_event.get("message"):  # someone sent us a message
+                    pass
+                    #sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
+                    #recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
+                   # message_text = messaging_event["message"]["text"]  # the message's text
 
-    #                 #send_message(sender_id, "I'm okay?")
+                    #send_message(sender_id, "I'm okay?")
+                if messaging_event.get("request_thread_control"):  # ADMIN requested control
+                    log("ADMIN REQUEST CONTROL")
+                    params = {
+                        "access_token": os.environ["PAGE_ACCESS_TOKEN"]
+                        "target_app_id": 263902037430900
+                    }
+                    headers = {
+                        "Content-Type": "application/json"
+                    hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=params, headers=headers, data=data)
+                    if hj.status_code != 200:
+                        log(r.status_code)
+                        log(r.text)
+                    else:
+                        log("HANDOVER SUCCESS? CONVERSATION MUST BE IN INBOX")
 
-    #             if messaging_event.get("delivery"):  # delivery confirmation
-    #                 pass
+                if messaging_event.get("delivery"):  # delivery confirmation
+                    pass
 
-    #             if messaging_event.get("optin"):  # optin confirmation
-    #                 pass
+                if messaging_event.get("optin"):  # optin confirmation
+                    pass
 
-    #             if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
-    #                 pass
+                if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
+                    pass
 
     return "ok", 200
 
