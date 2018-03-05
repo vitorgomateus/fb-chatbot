@@ -112,7 +112,7 @@ def send_message(recipient_id, message_text):
         log(r.text)
 
 def get_send_products(category):
-    log("REQUEST PRODUCTS cat={cate}".format(cate=category))
+    log("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
 
     params = {
         #"access_token": os.environ["PAGE_ACCESS_TOKEN"]
@@ -123,13 +123,13 @@ def get_send_products(category):
     data = json.dumps({
         })
 
-    r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
-    if r.status_code != 200:
-        log(r.status_code)
-        log(r.text)
+    #r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
+    #if r.status_code != 200:
+    #    log(r.status_code)
+    #    log(r.text)
 
 def send_webview(title_arr, img_arr, url_arr):
-    log("SEND_WEBVIEW")
+    log("NO* SEND_WEBVIEW")
     # iterate through arr...
     paramsWebview = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
