@@ -30,7 +30,7 @@ def webhook():
 
     
     data = request.get_json()
-    log("DATA")
+    log("_DATA_")
     log(data)  # you may not want to log every incoming message in production, but it's good for testing
     #strdata = str(data)
     #strdata= json.dumps(data)
