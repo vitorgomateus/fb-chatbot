@@ -33,7 +33,10 @@ def webhook():
     log("_DATA_")
     log(data)  # you may not want to log every incoming message in production, but it's good for testing
     
-    if data["entry"]["messaging"]["message"].get("is_echo"):
+    z= date["entry"]
+    x= z["messaging"]
+    message=x["message"]
+    if message.get("is_echo"):
                     log("WE GOT ECHO")
     #strdata = str(data)
     #strdata= json.dumps(data)
