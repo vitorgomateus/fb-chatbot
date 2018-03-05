@@ -54,7 +54,7 @@ def webhook():
 
             if entry.get("standby"):
                 for standby_event in entry["standby"]:  # a message was sent in standby
-                    pass
+                    log("STANBY EVENT")
 
             elif entry.get("messaging"):
 
