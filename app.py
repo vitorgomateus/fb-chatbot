@@ -33,9 +33,9 @@ def webhook():
     log("data")
     log(data)  # you may not want to log every incoming message in production, but it's good for testing
     #strdata = str(data)
-    strdata= json.dumps(data)
-    if "standby" in strdata:
-        log("WE HAVE STANBY")
+    #strdata= json.dumps(data)
+    #if "standby" in strdata:
+       #log("WE HAVE STANBY")
 
     #time.sleep(300) 
     if data["object"] == "page":
@@ -49,7 +49,7 @@ def webhook():
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                    # message_text = messaging_event["message"]["text"]  # the message's text
 
-                    send_message(sender_id, "I'm okay.")
+                    send_message(sender_id, "I'm okay?")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
@@ -64,25 +64,6 @@ def webhook():
 
 
 def send_message(recipient_id, message_text):
-
-#       vitor
-    # mkm = requests.get("https://jsonplaceholder.typicode.com/posts/1", params={}, headers={
-    #     "Content-Type": "application/json"
-    # }, data={})
-    # if mkm.status_code != 200:
-    #     log(r.status_code)
-    #     log(r.text)
-    # etv = mkm.get_json
-    # tve = resquest.data.get_json
-    # vet = mkm.request.data.get_json
-    # vavet = message_text + vet[body]
-    # log("response is mkm.get_json={one}; resquest.data.get_json = {two};  mkm.request.data.get_json= {three}; message_text + vet[body]={four}".
-    #     format(one=etv, two=tve, three=vet, four=vavet))
-#   end vitor
-
-
-
-
 
 #       intact -v-
     log("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
