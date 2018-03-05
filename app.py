@@ -59,8 +59,13 @@ def webhook():
                # message_text = messaging_event["message"]["text"]  # the message's text
 
                 #send_message(sender_id, "I'm okay?")
+
             if messaging_event.get("request_thread_control"):  # ADMIN requested control
-                log("ADMIN REQUEST CONTROL")
+
+                recipient_id_pass = messaging_event["recipient"]["id"]
+                log("ADMIN REQUEST CONTROL{recipi}".format(recipi=recipient_id_pass))
+
+
                 passData = json.dumps({
                     "recipient": {
                         "id": recipient_id
@@ -73,12 +78,12 @@ def webhook():
                 }
                 passHeaders = {
                     "Content-Type": "application/json"
-                hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
-                if hj.status_code != 200:
-                    log(r.status_code)
-                    log(r.text)
-                else:
-                    log("HANDOVER SUCCESS? CONVERSATION MUST BE IN INBOX")
+                # hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
+                # if hj.status_code != 200:
+                #     log(r.status_code)
+                #     log(r.text)
+                # else:
+                #     log("HANDOVER SUCCESS? CONVERSATION MUST BE IN INBOX")
 
             if messaging_event.get("delivery"):  # delivery confirmation
                 pass
