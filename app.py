@@ -67,7 +67,7 @@ def webhook():
 
                 passData = json.dumps({
                     "recipient": {
-                        "id": recipient_id
+                        "id": recipient_id_pass
                     },
                     "target_app_id":263902037430900,
                     "metadata":"pass_thread_control X test" 
