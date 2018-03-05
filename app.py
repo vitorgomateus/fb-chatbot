@@ -30,8 +30,10 @@ def webhook():
 
     
     data = request.get_json()
+    log("data")
     log(data)  # you may not want to log every incoming message in production, but it's good for testing
-    strdata = str(data)
+    #strdata = str(data)
+    strdata= json.dumps(data)
     if "standby" in strdata:
         log("WE HAVE STANBY")
 
