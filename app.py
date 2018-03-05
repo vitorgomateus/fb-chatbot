@@ -51,49 +51,56 @@ def webhook():
     #   original
     if data["object"] == "page":
         for entry in data["entry"]:
-            for messaging_event in entry["messaging"]:
-                sender_id_pass = messaging_event["sender"]["id"]
 
-                if messaging_event.get("message"):  # someone sent us a message
-                    pass
-                    #sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
-                    #recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
-                   # message_text = messaging_event["message"]["text"]  # the message's text
-
-                    #send_message(sender_id, "I'm okay?")
-
-                if messaging_event.get("request_thread_control"):  # ADMIN requested control
-                    log("ADMIN REQUEST CONTROL sender_id={sendr}".format(sendr=sender_id_pass))
-
-                    passData = json.dumps({
-                        "recipient": {
-                            "id": sender_id_pass
-                        },
-                        "target_app_id": 263902037430900,
-                        "metadata": "pass_thread_control X test" 
-                    })
-                    passParams = {
-                        "access_token": os.environ["PAGE_ACCESS_TOKEN"],
-                    }
-                    passHeaders = {
-                        "Content-Type": "application/json"
-                    }
-                    hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
-                    log("HANDOVER SENT? CONVERSATION BE IN INBOX ?")
-                    if hj.status_code != 200:
-                        log(r.status_code)
-                        log(r.text)
-                    else:
-                        log("HANDOVER SUCCESS? CONVERSATION MUST BE IN INBOX")
-
-                if messaging_event.get("delivery"):  # delivery confirmation
+            if entry.get("standby"):
+                for standby_event in entry["standby"]:  # a message was sent in standby
                     pass
 
-                if messaging_event.get("optin"):  # optin confirmation
-                    pass
+            elif entry.get("messaging"):
 
-                if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
-                    pass
+                for messaging_event in entry["messaging"]:
+                    sender_id_pass = messaging_event["sender"]["id"]
+
+                    if messaging_event.get("message"):  # someone sent us a message
+                        pass
+                        #sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
+                        #recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
+                       # message_text = messaging_event["message"]["text"]  # the message's text
+
+                        #send_message(sender_id, "I'm okay?")
+
+                    if messaging_event.get("request_thread_control"):  # ADMIN requested control
+                        log("ADMIN REQUEST CONTROL sender_id={sendr}".format(sendr=sender_id_pass))
+
+                        passData = json.dumps({
+                            "recipient": {
+                                "id": sender_id_pass
+                            },
+                            "target_app_id": 263902037430900,
+                            "metadata": "pass_thread_control X test" 
+                        })
+                        passParams = {
+                            "access_token": os.environ["PAGE_ACCESS_TOKEN"],
+                        }
+                        passHeaders = {
+                            "Content-Type": "application/json"
+                        }
+                        hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
+                        log("HANDOVER SENT? CONVERSATION BE IN INBOX ?")
+                        if hj.status_code != 200:
+                            log(r.status_code)
+                            log(r.text)
+                        else:
+                            log("HANDOVER SUCCESS? CONVERSATION MUST BE IN INBOX")
+
+                    if messaging_event.get("delivery"):  # delivery confirmation
+                        pass
+
+                    if messaging_event.get("optin"):  # optin confirmation
+                        pass
+
+                    if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
+                        pass
 
     return "ok", 200
 
