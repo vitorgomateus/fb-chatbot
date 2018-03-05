@@ -116,6 +116,8 @@ def get_send_products(category):
 
     params = {
         #"access_token": os.environ["PAGE_ACCESS_TOKEN"]
+        "consumer_key": os.environ["WC_CONSUMER_KEY"]
+        "consumer_secret": os.environ["WC_CONSUMER_SECRET"]
     }
     headers = {
         "Content-Type": "application/json"
@@ -123,10 +125,10 @@ def get_send_products(category):
     data = json.dumps({
         })
 
-    #r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
-    #if r.status_code != 200:
-    #    log(r.status_code)
-    #    log(r.text)
+    w = requests.get("https://www.myfriendsinportugal.com/wp-json/wc/v2/products", params=params, headers=headers, data=data)
+    if w.status_code != 200:
+        log(r.status_code)
+        log(r.text)
 
 def send_webview(title_arr, img_arr, url_arr):
     log("NO* SEND_WEBVIEW")
@@ -186,8 +188,8 @@ def send_webview(title_arr, img_arr, url_arr):
     })
     # r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=paramsWebview, headers=headersWebview, data=dataWebview)
     # if r.status_code != 200:
-        log(r.status_code)
-        log(r.text)
+    #    log(r.status_code)
+    #    log(r.text)
 
 def pass_thread_control(chatter_id):
     passData = json.dumps({

@@ -5,6 +5,8 @@
 -successful pass_thread_control!! Study logic to converse only with owning threads. each incoming
  message says if I'm owning it or not?
 
+-fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
+
 -< https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies
 
 -> It's going good and looking alive ;)
