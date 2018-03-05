@@ -62,7 +62,7 @@ def webhook():
             if messaging_event.get("request_thread_control"):  # ADMIN requested control
                 log("ADMIN REQUEST CONTROL")
                 params = {
-                    "access_token": os.environ["PAGE_ACCESS_TOKEN"]
+                    "access_token": os.environ["PAGE_ACCESS_TOKEN"],
                     "target_app_id": 263902037430900
                 }
                 headers = {
