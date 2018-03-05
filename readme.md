@@ -2,6 +2,7 @@
 
 -to get events from manned messages of my page, I apparently need to subscribe the bot to: messages; messaging_handover; message_echoes; standby
 
+-I still can't figure out handover protocol and standby channel :/ ;
 
 # Facebook Messenger Bot
 This is a simple python template that uses Flask to build a webhook for Facebook's Messenger Bot API.

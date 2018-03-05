@@ -35,7 +35,7 @@ def webhook():
     if data["object"] == "page":
         for entry in data["entry"]:
             for messaging_event in entry["messaging"]:
-                if messaging_event["message"].get("is_echo")
+                if messaging_event["message"].get("is_echo"):
                     log("WE GOT ECHO")
     #strdata = str(data)
     #strdata= json.dumps(data)
