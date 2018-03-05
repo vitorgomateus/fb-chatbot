@@ -9,6 +9,15 @@
 
 -> It's going good and looking alive ;)
 
+heroku apps
+heroku create
+heroku open
+heroku logs -t
+-
+git add&commit$push
+git push heroku master
+heroku open
+heroku config:add VERIFY_TOKEN=your_verification_token_here
 
 # Facebook Messenger Bot
 This is a simple python template that uses Flask to build a webhook for Facebook's Messenger Bot API.
