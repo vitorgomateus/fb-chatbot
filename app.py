@@ -65,19 +65,19 @@ def webhook():
                 recipient_id_pass = messaging_event["recipient"]["id"]
                 log("ADMIN REQUEST CONTROL{recipi}".format(recipi=recipient_id_pass))
 
-
                 passData = json.dumps({
                     "recipient": {
                         "id": recipient_id
                     },
                     "target_app_id":263902037430900,
-                    "metadata":"pass_thread_control test" 
+                    "metadata":"pass_thread_control X test" 
                 })
                 passParams = {
                     "access_token": os.environ["PAGE_ACCESS_TOKEN"],
                 }
                 passHeaders = {
                     "Content-Type": "application/json"
+                }
                 # hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
                 # if hj.status_code != 200:
                 #     log(r.status_code)
