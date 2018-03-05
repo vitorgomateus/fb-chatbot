@@ -119,7 +119,7 @@ def get_send_products(category):
 
     params = {
         #"access_token": os.environ["PAGE_ACCESS_TOKEN"]
-        "consumer_key": os.environ["WC_CONSUMER_KEY"]
+        "consumer_key": os.environ["WC_CONSUMER_KEY"],
         "consumer_secret": os.environ["WC_CONSUMER_SECRET"]
     }
     headers = {
