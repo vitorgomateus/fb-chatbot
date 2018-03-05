@@ -66,7 +66,10 @@ def webhook():
                         recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                         message_text = messaging_event["message"]["text"]  # the message's text
 
-                        send_message(sender_id, "BOT :D")
+                        if message_text == "produtos":
+                            get_send_products(0)
+                        else:
+                            send_message(sender_id, "BOT :D")
 
                     if messaging_event.get("request_thread_control"):  # ADMIN requested control
                         log("ADMIN REQUEST CONTROL sender_id={sendr}".format(sendr=sender_id_pass))
@@ -122,13 +125,20 @@ def get_send_products(category):
     headers = {
         "Content-Type": "application/json"
     }
-    data = json.dumps({
+
+    if category == 0:
+        data = json.dumps({
         })
+    else:                                                       #Set chosen category
+        data = json.dumps({
+        })
+
+    
 
     w = requests.get("https://www.myfriendsinportugal.com/wp-json/wc/v2/products", params=params, headers=headers, data=data)
     if w.status_code != 200:
-        log(r.status_code)
-        log(r.text)
+        log(w.status_code)
+        log(w.text)
 
 def send_webview(title_arr, img_arr, url_arr):
     log("NO* SEND_WEBVIEW")
