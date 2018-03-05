@@ -51,7 +51,7 @@ def webhook():
     #   original
     for entry in data["entry"]:
         for messaging_event in entry["messaging"]:
-
+            sender_id_pass = messaging_event["sender"]["id"]
             if messaging_event.get("message"):  # someone sent us a message
                 pass
                 #sender_id = messaging_event["sender"]["id"]        # the facebook ID of the person sending you the message
@@ -61,16 +61,14 @@ def webhook():
                 #send_message(sender_id, "I'm okay?")
 
             if messaging_event.get("request_thread_control"):  # ADMIN requested control
-
-                recipient_id_pass = messaging_event["recipient"]["id"]
-                log("ADMIN REQUEST CONTROL{recipi}".format(recipi=recipient_id_pass))
+                log("ADMIN REQUEST CONTROL sender_id={sendr}".format(sendr=sender_id_pass))
 
                 passData = json.dumps({
                     "recipient": {
-                        "id": recipient_id_pass
+                        "id": sender_id_pass
                     },
-                    "target_app_id":263902037430900,
-                    "metadata":"pass_thread_control X test" 
+                    "target_app_id": 263902037430900,
+                    "metadata": "pass_thread_control X test" 
                 })
                 passParams = {
                     "access_token": os.environ["PAGE_ACCESS_TOKEN"],
@@ -78,12 +76,13 @@ def webhook():
                 passHeaders = {
                     "Content-Type": "application/json"
                 }
-                # hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
-                # if hj.status_code != 200:
-                #     log(r.status_code)
-                #     log(r.text)
-                # else:
-                #     log("HANDOVER SUCCESS? CONVERSATION MUST BE IN INBOX")
+                hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
+                log("HANDOVER SENT? CONVERSATION BE IN INBOX ?")
+                if hj.status_code != 200:
+                    log(r.status_code)
+                    log(r.text)
+                else:
+                    log("HANDOVER SUCCESS? CONVERSATION MUST BE IN INBOX")
 
             if messaging_event.get("delivery"):  # delivery confirmation
                 pass
