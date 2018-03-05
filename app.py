@@ -111,6 +111,8 @@ def send_message(recipient_id, message_text):
         log(r.status_code)
         log(r.text)
 
+def get_send_products
+
 def send_webview(title_arr, img_arr, url_arr)
     log("SEND_WEBVIEW")
     # iterate through arr...
