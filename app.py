@@ -67,11 +67,14 @@ def webhook():
                         recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                         message_text = messaging_event["message"]["text"]  # the message's text
 
-                        if message_text == "produtos":
-                            get_send_products(0)
+                        if messaging_event["message"].get("attachments"):
+                            log("Bot got a sticker!")
                         else:
-                           send_message(sender_id, "BOT :D")
-                           pass
+                            if message_text == "produtos":
+                                get_send_products(0)
+                            else:
+                               send_message(sender_id, "BOT :D")
+                               pass
 
                     if messaging_event.get("request_thread_control"):  # ADMIN requested control
                         log("ADMIN REQUEST CONTROL sender_id={sendr}".format(sendr=sender_id_pass))
@@ -88,6 +91,11 @@ def webhook():
 
                     if messaging_event.get("postback"):  # user clicked/tapped "postback" button in earlier message
                         pass
+
+            else:
+                log("DEVDO - No Standby, neither Messaging")
+    else:
+        log("DEVDO - no PAGE")
 
     return "ok", 200
 
