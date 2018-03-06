@@ -10,6 +10,8 @@
 -https://pypi.python.org/pypi/WooCommerce
 	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
 
+-bot reage a várias mensagens em simultaneo :S
+
 -< https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies
 
 -> It's going good and looking alive ;)
