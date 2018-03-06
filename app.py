@@ -70,7 +70,7 @@ def webhook():
                         if message_text == "produtos":
                             get_send_products(0)
                         else:
-                           #send_message(sender_id, "BOT :D")
+                           send_message(sender_id, "BOT :D")
                            pass
 
                     if messaging_event.get("request_thread_control"):  # ADMIN requested control
@@ -125,8 +125,9 @@ def get_send_products(category):
         consumer_key= os.environ["WC_CONSUMER_KEY"],
         consumer_secret= os.environ["WC_CONSUMER_SECRET"],
         wp_api=True,
-        version="wc/v3"
+        version="wc/v2"
     )
+    #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
     w = wc_api_mfip.get("products").json()
     #produtoos = w.json()
