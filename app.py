@@ -121,7 +121,7 @@ def get_send_products(category):
 
 
     wc_api_mfip = API(
-        url="https://www.myfriendsinportugal.com",
+        url="https://myfriendsinportugal.com",
         consumer_key= os.environ["WC_CONSUMER_KEY"],
         consumer_secret= os.environ["WC_CONSUMER_SECRET"],
         wp_api=True,
