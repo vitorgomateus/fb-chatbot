@@ -129,8 +129,9 @@ def get_send_products(category):
     )
 
     wc_api_mfip.get("products").json()
-
-    log(wc_api_mfip)
+    produtoos = wc_api_mfip.get_json()
+    log("WC_RESPONSE ?")
+    log(produtos)
 
     # params = {
     #     #"access_token": os.environ["PAGE_ACCESS_TOKEN"]
