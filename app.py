@@ -117,13 +117,13 @@ def send_message(recipient_id, message_text):
         log(r.text)
 
 def get_send_products(category):
-    log("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
+    log("NO* REQUEST PRODUCTS cat={cate}, key={key}, sc={scret}.".format(cate=category, key=os.environ["WC_CONSUMER_KEY"], scret=os.environ["WC_CONSUMER_SECRET"]))
 
 
     wc_api_mfip = API(
         url="https://www.myfriendsinportugal.com",
-        consumer_key= os.environ["WC_CONSUMER_KEY"],
-        consumer_secret= os.environ["WC_CONSUMER_SECRET"],
+        consumer_key= "ck_55e0e0c174a08e3866c387d722128570b02b779f",
+        consumer_secret= "cs_6f10d5315b7f430327f2b1cbfe5d80a96d9a07a5",
         wp_api=True,
         version="wc/v2"
     )
