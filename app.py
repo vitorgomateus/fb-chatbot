@@ -128,8 +128,8 @@ def get_send_products(category):
         version="wc/v3"
     )
 
-    wc_api_mfip.get("products").json()
-    produtoos = wc_api_mfip.get_json()
+    w = wc_api_mfip.get("products").json()
+    produtoos = w.json()
     log("WC_RESPONSE ?")
     log(produtos)
 
