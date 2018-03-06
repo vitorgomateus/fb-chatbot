@@ -6,6 +6,7 @@ from datetime import datetime
 
 import requests
 from flask import Flask, request
+from woocommerce import API
 #from funcao import send_message
 
 app = Flask(__name__)
@@ -117,28 +118,39 @@ def send_message(recipient_id, message_text):
 def get_send_products(category):
     log("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
 
-    params = {
-        #"access_token": os.environ["PAGE_ACCESS_TOKEN"]
-        "consumer_key": os.environ["WC_CONSUMER_KEY"],
-        "consumer_secret": os.environ["WC_CONSUMER_SECRET"]
-    }
-    headers = {
-        "Content-Type": "application/json"
-    }
 
-    if category == 0:
-        data = json.dumps({
-        })
-    else:                                                       #Set chosen category
-        data = json.dumps({
-        })
+    wc_api_mfip = API(
+        url="https://www.myfriendsinportugal.com",
+        consumer_key= os.environ["WC_CONSUMER_KEY"],
+        consumer_secret= os.environ["WC_CONSUMER_SECRET"],
+        wp_api=True,
+        version="wc/v3"
+    )
 
-    
+    wc_api_mfip.get("products").json()
 
-    w = requests.get("https://www.myfriendsinportugal.com/wp-json/wc/v2/products", params=params, headers=headers, data=data)
-    if w.status_code != 200:
-        log(w.status_code)
-        log(w.text)
+    log(wc_api_mfip)
+
+    # params = {
+    #     #"access_token": os.environ["PAGE_ACCESS_TOKEN"]
+    #     "consumer_key": os.environ["WC_CONSUMER_KEY"],
+    #     "consumer_secret": os.environ["WC_CONSUMER_SECRET"]
+    # }
+    # headers = {
+    #     "Content-Type": "application/json"
+    # }
+
+    # if category == 0:
+    #     data = json.dumps({
+    #     })
+    # else:                                                       #Set chosen category
+    #     data = json.dumps({
+    #     })
+
+    # w = requests.get("https://www.myfriendsinportugal.com/wp-json/wc/v2/products", params=params, headers=headers, data=data)
+    # if w.status_code != 200:
+    #     log(w.status_code)
+    #     log(w.text)
 
 def send_webview(title_arr, img_arr, url_arr):
     log("NO* SEND_WEBVIEW")
