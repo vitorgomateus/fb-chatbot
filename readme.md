@@ -9,6 +9,7 @@
 
 -https://pypi.python.org/pypi/WooCommerce
 	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
+	get error -.-
 
 -bot reage a várias mensagens em simultaneo :S
 
