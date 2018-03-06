@@ -7,6 +7,9 @@
 
 -fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
 
+-https://pypi.python.org/pypi/WooCommerce
+	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
+
 -< https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies
 
 -> It's going good and looking alive ;)
