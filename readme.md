@@ -13,6 +13,10 @@
 
 -bot reage a várias mensagens em simultaneo :S
 
+-BD
+https://pypi.python.org/pypi/python-firebase/1.2
+https://console.firebase.google.com/project/bottesting-testbotting/overview
+
 -< https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies
 
 -> It's going good and looking alive ;)
