@@ -133,14 +133,13 @@ def get_send_products(category):
         consumer_key= os.environ["WC_CONSUMER_KEY"],
         consumer_secret= os.environ["WC_CONSUMER_SECRET"],
         wp_api=True,
-        version="wc/v2",
-        query_string_auth=True
+        version="wc/v2"
     )
     #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
     w = wc_api_mfip.get("products")
     #produtoos = w.json()
-    log("WC_RESPONSE ? {jsona}".format(jsona=w))
+    log("WC_RESPONSE ? {jsona}".format(jsona=w.text))
     #log(w.text)
 
     # params = {
