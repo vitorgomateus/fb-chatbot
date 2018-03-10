@@ -139,7 +139,7 @@ def get_send_products(category):
     #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
     w = wc_api_mfip.get("products")
-    produtoos = w.json()
+    produtoos = w.text
     log("WC_RESPONSE ? ")
     log(produtoos)
     #log(w.text)
