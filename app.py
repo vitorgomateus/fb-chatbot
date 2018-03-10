@@ -141,7 +141,7 @@ def get_send_products(category):
     w = wc_api_mfip.get("products")
     produtoos = w.text
     log("WC_RESPONSE ? ")
-    log(produtoos)
+    log(produtoos[0]["name"])
     #log(w.text)
 
     # params = {
