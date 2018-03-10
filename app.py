@@ -140,7 +140,8 @@ def get_send_products(category):
 
     w = wc_api_mfip.get("products")
     produtoos = w.json()
-    log("WC_RESPONSE ? {jsona}".format(jsona=produtoos))
+    log("WC_RESPONSE ? ")
+    log(produtoos)
     #log(w.text)
 
     # params = {
@@ -252,8 +253,8 @@ def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku
         if type(msg) is dict:
             msg = json.dumps(msg)
         else:
-            #msg = unicode(msg).format(*args, **kwargs)
-            msg="Oh, well.."
+            msg = unicode(msg).format(*args, **kwargs)
+            #msg="Oh, well.."
         print u"{}: {}".format(datetime.now(), msg)
     except UnicodeEncodeError:
         pass  # squash logging errors in case of non-ascii text
