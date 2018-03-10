@@ -133,7 +133,8 @@ def get_send_products(category):
         consumer_key= os.environ["WC_CONSUMER_KEY"],
         consumer_secret= os.environ["WC_CONSUMER_SECRET"],
         wp_api=True,
-        version="wc/v2"
+        version="wc/v2",
+        query_string_auth=True 
     )
     #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
