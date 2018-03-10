@@ -139,7 +139,7 @@ def get_send_products(category):
     #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
     w = wc_api_mfip.get("products")
-    produtoos = w.text
+    produtoos = w.json()
     log("WC_RESPONSE ? ")
     log(produtoos[0]["name"])
     #log(w.text)
@@ -253,8 +253,8 @@ def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku
         if type(msg) is dict:
             msg = json.dumps(msg)
         else:
-            #msg = unicode(msg).format(*args, **kwargs)
-            msg="Oh, well.."
+            msg = unicode(msg).format(*args, **kwargs)
+            #msg="Oh, well.."
         print u"{}: {}".format(datetime.now(), msg)
     except UnicodeEncodeError:
         pass  # squash logging errors in case of non-ascii text
