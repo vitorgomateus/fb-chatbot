@@ -228,7 +228,7 @@ def send_webview(title_arr, img_arr, url_arr, recipient_id):
         }
     })
     wv = requests.post("https://graph.facebook.com/v2.6/me/messages", params=paramsWebview, headers=headersWebview, data=dataWebview)
-     if wv.status_code != 200:
+    if wv.status_code != 200:
         log(wv.status_code)
         log(wv.text)
 
