@@ -151,18 +151,12 @@ def get_send_products(category, recipient):
     #log(w.text)
 
 
-    arr_title=[response_products[0]["name"],response_products[1]["name"],response_products[2]["name"]]
-    #arr_title[0]=
-    #arr_title[1]=response_products[1]["name"]
-    #arr_title[2]=response_products[2]["name"]
-    arr_image=[]
-    arr_image[0]=response_products[0]["images"][0]["src"]
-    arr_image[1]=response_products[1]["images"][0]["src"]
-    arr_image[2]=response_products[2]["images"][0]["src"]
-    arr_link=[]
-    arr_link[0]=response_products[0]["permalink"]
-    arr_link[1]=response_products[1]["permalink"]
-    arr_link[2]=response_products[2]["permalink"]
+    arr_title=[response_products[0]["name"], response_products[1]["name"], response_products[2]["name"]]
+    
+    arr_image=[response_products[0]["images"][0]["src"], response_products[1]["images"][0]["src"], response_products[2]["images"][0]["src"]]
+    
+    arr_link=[response_products[0]["permalink"], response_products[1]["permalink"], response_products[2]["permalink"]]
+    
     send_webview( arr_title, arr_image, arr_link, recipient)
 
 
