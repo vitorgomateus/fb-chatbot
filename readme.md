@@ -5,6 +5,11 @@
 -consegue enviar webviews com sucesso
 
 ----
+>												File "/app/app.py", line 74, in webhook
+>2018-03-13T15:21:34.456796+00:00 app[web.1]:     get_send_products(0, sender_id)
+>2018-03-13T15:21:34.456798+00:00 app[web.1]:   File "/app/app.py", line 155, in get_send_products
+>2018-03-13T15:21:34.456799+00:00 app[web.1]:     arr_title[0]=response_products[0]["name"]
+>2018-03-13T15:21:34.456801+00:00 app[web.1]: IndexError: list assignment index out of range
 
 -to get events from manned messages of my page, I apparently need to subscribe the bot to: messages; messaging_handover; message_echoes; standby
 
