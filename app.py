@@ -71,7 +71,7 @@ def webhook():
                         else:
                             message_text = messaging_event["message"]["text"]  # the message's text
                             if message_text == "produtos":
-                                get_send_products(0)
+                                get_send_products(0, sender_id)
                             else:
                                send_message(sender_id, "BOT :D")
                                pass
