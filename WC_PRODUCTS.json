@@ -1,0 +1,2208 @@
+[
+  {
+    "id": 5702,
+    "name": "X",
+    "slug": "",
+    "permalink": "https://myfriendsinportugal.com/?post_type=product&p=5702",
+    "date_created": null,
+    "date_created_gmt": null,
+    "date_modified": "2018-03-12T10:45:47",
+    "date_modified_gmt": "2018-03-12T10:45:47",
+    "type": "simple",
+    "status": "draft",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "",
+    "short_description": "",
+    "sku": "",
+    "price": "",
+    "regular_price": "",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "",
+    "on_sale": false,
+    "purchasable": false,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 0,
+        "date_created": "2018-03-13T14:22:55",
+        "date_created_gmt": "2018-03-13T14:22:55",
+        "date_modified": "2018-03-13T14:22:55",
+        "date_modified_gmt": "2018-03-13T14:22:55",
+        "src": "https://myfriendsinportugal.com/wp-content/plugins/woocommerce/assets/images/placeholder.png",
+        "name": "Placeholder",
+        "alt": "Placeholder",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5702"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5337,
+    "name": "Provar a Natureza",
+    "slug": "provar-a-natureza",
+    "permalink": "https://myfriendsinportugal.com/product/provar-a-natureza/",
+    "date_created": "2018-01-12T15:04:35",
+    "date_created_gmt": "2018-01-12T15:04:35",
+    "date_modified": "2018-03-08T14:56:41",
+    "date_modified_gmt": "2018-03-08T14:56:41",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>A Patrícia e o Mário vão receber-vos como se vocês fossem da família. E se forem de comboio, eles podem ir buscar-vos à estação, dependendo do tamanho do vosso grupo. Vão de certeza passar um bom bocado na sua companhia, a passear pela quinta, provando folhas tiradas directamente dos arbustos e a ouvir uma verdadeira aula sobre plantas aromáticas e medicinais. Mas, também podem por literalmente as mãos na terra, pois na quinta há sempre muito que fazer. No final do programa ainda se podem deliciar com uma refeição ao ar livre com produtos da região.</p>\n",
+    "short_description": "<p>Eu e o meu marido começamos este projecto porque queríamos recuperar estes terrenos que eram dos meus avós. Aqui nós produzimos plantas aromáticas autóctones da península ibérica, como por exemplo o tomilho bela luz. Também produzimos outras plantas como a <em>Stevia</em>, a <em>Calendula</em> e muitas outras. Queremos convidar-vos a virem visitar-nos e às nossas plantas, a virem senti-las, cheirá-las e prová-las, por exemplo a <em>stevia</em> que é tão docinha!</p>\n",
+    "sku": "",
+    "price": "25",
+    "regular_price": "25",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>25,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [
+      5336
+    ],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 594,
+        "name": "Nature",
+        "slug": "nature"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 5649,
+        "date_created": "2018-02-15T16:15:30",
+        "date_created_gmt": "2018-02-15T16:15:30",
+        "date_modified": "2018-02-15T16:15:30",
+        "date_modified_gmt": "2018-02-15T16:15:30",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/01/MFIP-CAPAec-01_IMG_20171005_110217.jpg",
+        "name": "MFIP-CAPAec-01_IMG_20171005_110217",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 19777,
+        "key": "friend",
+        "value": "Patrícia"
+      },
+      {
+        "id": 19778,
+        "key": "desc_friend",
+        "value": "A Patrícia é formada em engenharia do ambiente com uma especialização em agricultura biológica. Facilmente se percebe pelo seu discurso que ela sabe realmente do que está a falar e também facilmente se percebe a sua paixão pela terra e pela vida!"
+      },
+      {
+        "id": 19779,
+        "key": "foto_friend",
+        "value": "5573"
+      },
+      {
+        "id": 19780,
+        "key": "localidade",
+        "value": "Sangalhos"
+      },
+      {
+        "id": 19781,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en",
+          "es",
+          "fr"
+        ]
+      },
+      {
+        "id": 19782,
+        "key": "num_pessoas",
+        "value": "12"
+      },
+      {
+        "id": 19783,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 19784,
+        "key": "disp_horario",
+        "value": "10h-17h30"
+      },
+      {
+        "id": 19785,
+        "key": "disp_data",
+        "value": "Sab-Dom"
+      },
+      {
+        "id": 19786,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren",
+          "forPets",
+          "forMobility"
+        ]
+      },
+      {
+        "id": 19787,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 19818,
+        "key": "_friend",
+        "value": "field_5a4f71c2b52d1"
+      },
+      {
+        "id": 19819,
+        "key": "_desc_friend",
+        "value": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 19820,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 19821,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 19822,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 19823,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 19824,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 19825,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 19826,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 19827,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 19828,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 19829,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": ""
+      },
+      {
+        "id": 19856,
+        "key": "_yoast_wpseo_content_score",
+        "value": "30"
+      },
+      {
+        "id": 20527,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21308,
+        "key": "popular_posts",
+        "value": "20"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5337"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5336,
+    "name": "Tasting Nature",
+    "slug": "tasting-nature",
+    "permalink": "https://myfriendsinportugal.com/product/tasting-nature/",
+    "date_created": "2018-01-12T14:55:53",
+    "date_created_gmt": "2018-01-12T14:55:53",
+    "date_modified": "2018-03-08T15:42:16",
+    "date_modified_gmt": "2018-03-08T15:42:16",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Patrícia and Mário will welcome you in their farm has if you were part of the family. If you don't have a car they can pick you at the train station, depending on how big is your group. You'll have a very nice time walking along the farm, tasting leaves right from the bushes and enjoying a true class on aromatic and medicinal plants. But you can also \"get your hands dirty\" because there is always a lot to do at the farm. At the end of the program you can still enjoy a very nice meal with products from that region.</p>\n",
+    "short_description": "<p>My husband and I started this project some years ago because we wanted to recover this land that belonged to my grandparents. Here we produce aromatic plants, that are original from the Iberan Peninsula, like Mastic Thyme. We produce other plants like Stevia, Calendula, and many more. We’d like to invite you to come and visit us and our plants, feel them, smell them, taste them, for example Stevia which is very sweet!</p>\n",
+    "sku": "",
+    "price": "25",
+    "regular_price": "25",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>25,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [
+      5337
+    ],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [
+      {
+        "id": 594,
+        "name": "Nature",
+        "slug": "nature"
+      }
+    ],
+    "tags": [],
+    "images": [
+      {
+        "id": 5649,
+        "date_created": "2018-02-15T16:15:30",
+        "date_created_gmt": "2018-02-15T16:15:30",
+        "date_modified": "2018-02-15T16:15:30",
+        "date_modified_gmt": "2018-02-15T16:15:30",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/01/MFIP-CAPAec-01_IMG_20171005_110217.jpg",
+        "name": "MFIP-CAPAec-01_IMG_20171005_110217",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 19748,
+        "key": "friend",
+        "value": "Patrícia"
+      },
+      {
+        "id": 19749,
+        "key": "_friend",
+        "value": "fie2018-03-13T14:22:56.718386+00:00 app[web.1]: ld_5a4f71c2b52d1"
+      },
+      {
+        "id": 19750,
+        "key": "desc_friend",
+        "value": "Patrícia is an environmental engineer with a specialization in biological agriculture. One can understand from her speech that she really knows what she is talking about and also feel the passion that she has for the land and for life!"
+      },
+      {
+        "id": 19751,
+        "key": "_desc_friend",
+        "value": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 19752,
+        "key": "foto_friend",
+        "value": "5573"
+      },
+      {
+        "id": 19753,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 19754,
+        "key": "localidade",
+        "value": "Sangalhos"
+      },
+      {
+        "id": 19755,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 19756,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en",
+          "es",
+          "fr"
+        ]
+      },
+      {
+        "id": 19757,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 19758,
+        "key": "num_pessoas",
+        "value": "12"
+      },
+      {
+        "id": 19759,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 19760,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 19761,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 19762,
+        "key": "disp_horario",
+        "value": "10am-5:30pm"
+      },
+      {
+        "id": 19763,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 19764,
+        "key": "disp_data",
+        "value": "Sat-Sun"
+      },
+      {
+        "id": 19765,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 19766,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren",
+          "forPets",
+          "forMobility"
+        ]
+      },
+      {
+        "id": 19767,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 19768,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 19769,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 19770,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": "594"
+      },
+      {
+        "id": 19771,
+        "key": "_yoast_wpseo_content_score",
+        "value": "60"
+      },
+      {
+        "id": 20554,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21264,
+        "key": "popular_posts",
+        "value": "36"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5336"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5335,
+    "name": "Arte nas ruas de Estarreja",
+    "slug": "arte-nas-ruas-de-estarreja",
+    "permalink": "https://myfriendsinportugal.com/product/arte-nas-ruas-de-estarreja/",
+    "date_created": "2018-01-12T13:14:34",
+    "date_created_gmt": "2018-01-12T13:14:34",
+    "date_modified": "2018-02-07T11:59:45",
+    "date_modified_gmt": "2018-02-07T11:59:45",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Quer chegue a Estarreja de carro ou de comboio, terá sempre o Ricardo à sua espera.<br />\nA primeira paragem deste programa é para tomar café num dos espaços mas agradáveis da cidade. Em seguida, a pé ou de LongBoard, começa o percurso para visitar as várias obras com que a cidade se decora. Delicie-se com as verdadeiras obras de arte que vão desfilando à medida que se desliza pelas ruas de Estarreja. Complemente esta bela visita, com as histórias que o Ricardo tem para contar da suas vivências e da paixão pelas artes gráficas e ainda falar-vos das peculiaridades da arte urbana, do graffiti, dos tags, dos wall of fame, etc.</p>\n",
+    "short_description": "<p>Desde o ano passado que Estarreja começou a assumir a sua cultura de arte urbana e criou o ESTAU. Para os apaixonados das artes ainda marginais e contemporâneas, aqui fica o convite para virem ver o que de melhor há por aqui, e quem sabe dar um giro de LongBoard!</p>\n",
+    "sku": "",
+    "price": "10",
+    "regular_price": "10",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>10,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 5668,
+        "date_created": "2018-02-15T17:17:55",
+        "date_created_gmt": "2018-02-15T17:17:55",
+        "date_modified": "2018-02-15T17:17:55",
+        "date_modified_gmt": "2018-02-15T17:17:55",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/02/MFIP-CAPAec-01_IMG_7285.jpg",
+        "name": "MFIP-CAPAec-01_IMG_7285",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 19425,
+        "key": "friend",
+        "value": "Ricardo Marques Martins"
+      },
+      {
+        "id": 19426,
+        "key": "desc_friend",
+        "value": "O Ricardo cresceu em Estarreja e fez a licenciatura e o mestrado em design na Universidade de Aveiro. Vai para todo o lado de LongBoard, com as suas barbas ao vento, e chegou a desenhar uma série de pranchas bem fixes. Passa 90% do seu tempo a desenhar e quando não o está a fazer, certamente é porque está a sonhar com isso. E já agora, as barbas dele são deslumbrantes!"
+      },
+      {
+        "id": 19427,
+        "key": "foto_friend",
+        "value": "5572"
+      },
+      {
+        "id": 19428,
+        "key": "localidade",
+        "value": "Estarreja"
+      },
+      {
+        "id": 19429,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en",
+          "es"
+        ]
+      },
+      {
+        "id": 19430,
+        "key": "num_pessoas",
+        "value": "12"
+      },
+      {
+        "id": 19431,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 19432,
+        "key": "disp_horario",
+        "value": "10h-18h"
+      },
+      {
+        "id": 19433,
+        "key": "disp_data",
+        "value": "Seg-Dom"
+      },
+      {
+        "id": 19434,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren",
+          "forMobility"
+        ]
+      },
+      {
+        "id": 19435,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 19466,
+        "key": "_friend",
+        "value": "field_5a4f71c2b52d1"
+      },
+      {
+        "id": 19467,
+        "key": "_desc_friend",
+        "value": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 19468,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 19469,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 19470,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 19471,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 19472,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 19473,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 19474,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 19475,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 19476,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 19477,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": ""
+      },
+      {
+        "id": 19504,
+        "key": "_yoast_wpseo_content_score",
+        "value": "30"
+      },
+      {
+        "id": 19564,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21440,
+        "key": "popular_posts",
+        "value": "12"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5335"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5334,
+    "name": "Urban Art Tour",
+    "slug": "urban-art-tour",
+    "permalink": "https://myfriendsinportugal.com/product/urban-art-tour/",
+    "date_created": "2018-01-12T13:11:10",
+    "date_created_gmt": "2018-01-12T13:11:10",
+    "date_modified": "2018-02-15T17:18:41",
+    "date_modified_gmt": "2018-02-15T17:18:41",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Whether you arrive to Estarreja by car or by Train, you’ll always have Ricardo waiting for you. The first stop of this program is to have a real portuguese coffee in one of the city’s best places for it. Next, on foot or on LongBoard, starts the tour to see the several masterpieces with which the city decorates itself. The beautiful paintings on the walls are a pleasure to watch! Enjoy them as you slide through the city and complement this lovely tour with the company of Ricardo and his stories. He will tell you everything you want to know about some interesting details of Street Art, of graffiti, tags, the wall of fame, and much more.</p>\n",
+    "short_description": "<p>Since last year, Estarreja started to accept it’s Street Art culture and created ESTAU. For the ones in love with the still marginal and contemporary arts, here goes the invitation to come and see what’s best around here and, how knows, take a ride in a LongBoard!</p>\n",
+    "sku": "",
+    "price": "10",
+    "regular_price": "10",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>10,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 5668,
+        "date_created": "2018-02-15T17:17:55",
+        "date_created_gmt": "2018-02-15T17:17:55",
+        "date_modified": "2018-02-15T17:17:55",
+        "date_modified_gmt": "2018-02-15T17:17:55",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/02/MFIP-CAPAec-01_IMG_7285.jpg",
+        "name": "MFIP-CAPAec-01_IMG_7285",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 19396,
+        "key": "friend",
+        "value": "Ricardo Marques Martins"
+      },
+      {
+        "id": 19397,
+        "key": "_friend",
+        "value": "field_5a4f71c2b52d1"
+      },
+      {
+        "id": 19398,
+        "key": "desc_friend",
+        "value": "Ricardo was born in Estarreja and graduated from the University of Aveiro with a Masters in Design. He goes everywhere with his LongBoard, his beard blowing in the wind, he 2018-03-13T14:22:56.718386+00:00 app[web.1]: has even designed several real cool boards. He spends most of his time drawing and, when he is not drawing, he is most certainly dreaming of it. And, by the way, his beard is gorgeous!"
+      },
+      {
+        "id": 19399,
+        "key": "_desc_friend",
+        "value": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 19400,
+        "key": "foto_friend",
+        "value": "5572"
+      },
+      {
+        "id": 19401,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 19402,
+        "key": "localidade",
+        "value": "Estarreja"
+      },
+      {
+        "id": 19403,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 19404,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en",
+          "es"
+        ]
+      },
+      {
+        "id": 19405,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 19406,
+        "key": "num_pessoas",
+        "value": "12"
+      },
+      {
+        "id": 19407,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 19408,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 19409,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 19410,
+        "key": "disp_horario",
+        "value": "10am-7pm"
+      },
+      {
+        "id": 19411,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 19412,
+        "key": "disp_data",
+        "value": "Mon-Sun"
+      },
+      {
+        "id": 19413,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 19414,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren",
+          "forMobility"
+        ]
+      },
+      {
+        "id": 19415,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 19416,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 19417,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 19418,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": ""
+      },
+      {
+        "id": 19419,
+        "key": "_yoast_wpseo_content_score",
+        "value": "30"
+      },
+      {
+        "id": 19538,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21442,
+        "key": "popular_posts",
+        "value": "18"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5334"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5333,
+    "name": "Um Museu a Navegar",
+    "slug": "um-museu-navegar",
+    "permalink": "https://myfriendsinportugal.com/product/um-museu-navegar/",
+    "date_created": "2018-01-12T12:57:06",
+    "date_created_gmt": "2018-01-12T12:57:06",
+    "date_modified": "2018-02-13T17:24:56",
+    "date_modified_gmt": "2018-02-13T17:24:56",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>Começamos por sair de Aveiro pelo canal das pirâmides e navegar por entre as antigas marinhas de sal. O programa inclui um piquenique numa das ilhotas da ria e prometemos reservar algum tempo para uns mergulhos. Passamos também pelos antigos estaleiros de construção naval e regressamos a Aveiro.</p>\n",
+    "short_description": "<p>O programa Um Museu a Navegar consiste num passeio turístico que vai percorrer os 57km de extensão da Ria de Aveiro. Esta embarcação é completamente distinta das outras, uma vez que não navega nos canais urbanos e é a única embarcação portuguesa com a certificação da Academia Europeia de Museus.</p>\n",
+    "sku": "",
+    "price": "20",
+    "regular_price": "20",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>20,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 5604,
+        "date_created": "2018-02-13T17:24:45",
+        "date_created_gmt": "2018-02-13T17:24:45",
+        "date_modified": "2018-02-13T17:24:45",
+        "date_modified_gmt": "2018-02-13T17:24:45",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/01/MFIP-32__MG_2199.jpg",
+        "name": "MFIP-32__MG_2199",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 19248,
+        "key": "friend",
+        "value": "Gustavo Madeira Barros"
+      },
+      {
+        "id": 19249,
+        "key": "desc_friend",
+        "value": "Gustavo Madeira Barros é de Aveiro e tem uma grande paixão pelos barcos e pela ria de Aveiro.\r\nDesde pequenino utilizou sempre a Ria de Aveiro para atividades de lazer, desde o simples mergulho na ria, o brincar a atirar lama ou lodo uns aos outros, a vela, a canoagem, o ski e o wakeboard. Considera a ria de Aveiro um palco de atividades esplêndidas, ao qual esteve sempre ligado pela parte do lazer.\r\nEm 2010 adquiriu a lancha Praia da Costa Nova, que foi construída em 1945, e era a antiga lancha que fazia a travessia de Aveiro para São Jacinto. Demorou cerca de 3 anos a reconstruir toda a embarcação sem a descaracterizar, mantendo a traça original. Por essa razão, obteve a certificação da Academia Europeia de Museus"
+      },
+      {
+        "id": 19250,
+        "key": "foto_friend",
+        "value": "5575"
+      },
+      {
+        "id": 19251,
+        "key": "localidade",
+        "value": "Aveiro"
+      },
+      {
+        "id": 19252,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en",
+          "es"
+        ]
+      },
+      {
+        "id": 19253,
+        "key": "num_pessoas",
+        "value": "10"
+      },
+      {
+        "id": 19254,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 19255,
+        "key": "disp_horario",
+        "value": "8h-19h"
+      },
+      {
+        "id": 19256,
+        "key": "disp_data",
+        "value": "Seg-Dom"
+      },
+      {
+        "id": 19257,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren"
+        ]
+      },
+      {
+        "id": 19258,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 19289,
+        "key": "_friend",
+        "value": "field_5a4f71c2b52d1"
+      },
+      {
+        "id": 19290,
+        "key": "_desc_friend",
+        "value": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 19291,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 19292,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 19293,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 19294,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 19295,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 19296,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 19297,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 19298,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 19299,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 19300,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": ""
+      },
+      {
+        "id": 19327,
+        "key": "_yoast_wpseo_content_score",
+        "value": "30"
+      },
+      {
+        "id": 19616,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21441,
+        "key": "popular_posts",
+        "value": "10"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5333"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5331,
+    "name": "A Floating Museum",
+    "slug": "a-floating-museum",
+    "permalink": "https://myfriendsinportugal.com/product/a-floating-museum/",
+    "date_created": "2018-01-12T12:34:35",
+    "date_created_gmt": "2018-01-12T12:34:35",
+    "date_modified": "2018-02-07T11:59:13",
+    "date_modified_gmt": "2018-02-07T11:59:13",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>We’ll start by going trough the <em>Canal das Pirâmides</em> and then sail by some of Aveiro's last operating salt flats. The program also includes a picnic in one of the Ria´s islet and some time for those who want to take a swim. Before we go back to Aveiro there is still time to pass by the old shipyards.</p>\n",
+    "short_description": "<p>This program consists in a touristic tour through the 57km of the Ria de Aveiro, away from the urban canals, in a very unique vessel, the only one to currently have the Certificate of the European Museum Academy.</p>\n",
+    "sku": "",
+    "price": "20",
+    "regular_price": "20",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>20,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 5604,
+        "date_created": "2018-02-13T17:24:45",
+        "date_created_gmt": "2018-02-13T17:24:45",
+        "date_modified": "2018-02-13T17:24:45",
+        "date_modified_gmt": "2018-02-13T17:24:45",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/01/MFIP-32__MG_2199.jpg",
+        "name": "MFIP-32__MG_2199",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 19219,
+        "key": "friend",
+        "value": "Gustavo Madeira Barros"
+      },
+      {
+        "id": 19220,
+        "key": "_friend",
+        "value": "field_5a4f71c2b52d1"
+      },
+      {
+        "id": 19221,
+        "key": "desc_friend",
+        "value": "Gustavo Madeira Barros is from Aveiro and has a great passion for boats and the Ria de Aveiro. He uses the Ria as a playground since childhood for all sorts of cool stuff. From diving to mud playing and from canoeing to wakeboarding, he did it all. He finds the Ria an excellent place to have fun, exercise and connect with nature in general.\r\nIn 2010 acquired the boat Praia da Costa Nova, that was originally built in 1945, and was the old boat that transversed from Aveiro to S.Jacinto. It took 3 years to rebuild the whole ship without depriving it of it’s original traces. For this reason it holds a certification from the European Museum Academy."
+      },
+      {
+        "id": 19222,
+        "key": "_desc_friend",
+        "va2018-03-13T14:22:56.718386+00:00 app[web.1]: lue": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 19223,
+        "key": "foto_friend",
+        "value": "5575"
+      },
+      {
+        "id": 19224,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 19225,
+        "key": "localidade",
+        "value": "Aveiro"
+      },
+      {
+        "id": 19226,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 19227,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en",
+          "es"
+        ]
+      },
+      {
+        "id": 19228,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 19229,
+        "key": "num_pessoas",
+        "value": "10"
+      },
+      {
+        "id": 19230,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 19231,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 19232,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 19233,
+        "key": "disp_horario",
+        "value": "8am-7pm"
+      },
+      {
+        "id": 19234,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 19235,
+        "key": "disp_data",
+        "value": "Mon-Sun"
+      },
+      {
+        "id": 19236,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 19237,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren"
+        ]
+      },
+      {
+        "id": 19238,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 19239,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 19240,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 19241,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": ""
+      },
+      {
+        "id": 19242,
+        "key": "_yoast_wpseo_content_score",
+        "value": "60"
+      },
+      {
+        "id": 19590,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21498,
+        "key": "popular_posts",
+        "value": "14"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5331"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5321,
+    "name": "Passeio Gastronómico",
+    "slug": "passeio-gastronomico",
+    "permalink": "https://myfriendsinportugal.com/product/passeio-gastronomico/",
+    "date_created": "2018-01-10T16:54:04",
+    "date_created_gmt": "2018-01-10T16:54:04",
+    "date_modified": "2018-02-13T17:26:03",
+    "date_modified_gmt": "2018-02-13T17:26:03",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>O programa consiste numa visita ao mercado de Coimbra, para conhecer os vários produtos e até uma pequena aula no próprio mercado do que são os produtos tradicionais portugueses, contar um pouco das histórias desses produtos e que pratos é que se podem confeccionar com eles.<br />\nNo mercado compram-se os principais produtos (que podem ir desde os petiscos, aos queijos, aos enchidos, ao bacalhau...), passa-se depois por algumas ruas da cidade de Coimbra, por algumas lojas mais antigas que possam complementar a visita e termina-se no centro da cidade, no espaço Aromas da Sé, onde haverá a oportunidade de ter uma mini aula de cozinha e uma degustação dos produtos comprados. Assim será levado pelos sabores de Coimbra e da região, onde poderá, não só aprender, não só ouvir e ver o Chef João Quaresma a confeccionar algo, mas também a colocar as mãos no bacalhau, nos enchidos ou no queijo aprendendo assim os seus truques. Para finalizar, uma prova gastronómica, daquilo que foi confeccionado, obviamente acompanhado pelos óptimos vinhos da região.</p>\n",
+    "short_description": "<p>Propõe-se aos viajantes mais do que conhecer, mais do que provar, mais do que degustar um produto ou um prato, fazer uma viagem até à origem: Começar com o conhecimento dos produtos, passando pelos processos e pelas histórias, até a um ponto final saboroso que é a prova gastronómica.</p>\n",
+    "sku": "",
+    "price": "50",
+    "regular_price": "50",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>50,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 5672,
+        "date_created": "2018-02-15T18:14:56",
+        "date_created_gmt": "2018-02-15T18:14:56",
+        "date_modified": "2018-02-15T18:14:56",
+        "date_modified_gmt": "2018-02-15T18:14:56",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/01/MFIP-CAPApg_17.jpg",
+        "name": "MFIP-CAPApg_17",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 19044,
+        "key": "friend",
+        "value": "João Quaresma"
+      },
+      {
+        "id": 19045,
+        "key": "desc_friend",
+        "value": "O gosto pela cozinha não vem desde miúdo, mas começou a crescer até chegar a um ponto em que achei que tinha mesmo que aprender e fazer uma formação para ser cozinheiro. Desde aí fiz muitas coisas, e se calhar a principal foi ter corrido a Europa a promover a gastronomia portuguesa, numa food truck. Andei dois meses pela Europa e estive em 20 cidades europeias a promover a cozinha portuguesa, a explicar as origens da nossa cozinha, e a cozinhar também, não só para os nossos emigrantes, mas principalmente para os estrangeiros, para lhes dar a conhecer os produtos e a cozinha portuguesa.\r\nOs meus pais sempre tiveram uma quinta, em que me habituei a ver a evolução dos produtos e isso deu-me essa ferramenta que é valorizar os produtos locais, que nós temos em Portugal e nesta região"
+      },
+      {
+        "id": 19046,
+        "key": "foto_friend",
+        "value": "5571"
+      },
+      {
+        "id": 19047,
+        "key": "localidade",
+        "value": "Coimbra"
+      },
+      {
+        "id": 19048,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en",
+          "es"
+        ]
+      },
+      {
+        "id": 19049,
+        "key": "num_pessoas",
+        "value": "10"
+      },
+      {
+        "id": 19050,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 19051,
+        "key": "disp_horario",
+        "value": "10h-14h"
+      },
+      {
+        "id": 19052,
+        "key": "disp_data",
+        "value": "Sábado"
+      },
+      {
+        "id": 19053,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren"
+        ]
+      },
+      {
+        "id": 19054,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 19085,
+        "key": "_friend",
+        "value": "field_5a4f71c2b52d1"
+      },
+      {
+        "id": 19086,
+        "key": "_desc_friend",
+        "value": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 19087,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 19088,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 19089,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 19090,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 19091,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 19092,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 19093,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 19094,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 19095,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 19096,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": ""
+      },
+      {
+        "id": 19123,
+        "key": "_yoast_wpseo_content_score",
+        "value": "30"
+      },
+      {
+        "id": 19668,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21311,
+        "key": "popular_posts",
+        "value": "21"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5321"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5320,
+    "name": "Gastronomic Tour",
+    "slug": "gastronomic-tour",
+    "permalink": "https://myfriendsinportugal.com/product/gastronomic-tour/",
+    "date_created": "2018-01-10T16:44:51",
+    "date_created_gmt": "2018-01-10T16:44:51",
+    "date_modified": "2018-02-15T18:31:21",
+    "date_modified_gmt": "2018-02-15T18:31:21",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>We start with a visit to the market of Coimbra, to learn about the variety of the regional products and other traditional portuguese products, their history and the kind of dishes that can be prepared with them. After we buy the fresh products (which can range from cheeses, sausages, cod, fish, meat, vegetables and fruit), we'll take a walk through the streets of Coimbra, passing by some of the oldest stores where complimentary products can be bought to enhance the cookings.<br />\nYou will be taken through the flavours of Coimbra and it’s region, where you'll have the chance, not just to watch the Chef prepare the dishes, but also to learn and taste the codfish, the regional cheeses and smoked products, obviously accompanied with delicious regional local wines.</p>\n",
+    "short_description": "<p>This program wants you not just to taste, not just to know the fresh goods that can be bought at the local market, but seeks to show you their origins and stories, up to the delicious final point which is a wonderful food&amp;wine tasting.</p>\n",
+    "sku": "",
+    "price": "50",
+    "regular_price": "50",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>50,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 5672,
+        "date_created": "2018-02-15T18:14:56",
+        "date_created_gmt": "2018-02-15T18:14:56",
+        "date_modified": "2018-02-15T18:14:52018-03-13T14:22:56.718386+00:00 app[web.1]: 6",
+        "date_modified_gmt": "2018-02-15T18:14:56",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/01/MFIP-CAPApg_17.jpg",
+        "name": "MFIP-CAPApg_17",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 19015,
+        "key": "friend",
+        "value": "João Quaresma"
+      },
+      {
+        "id": 19016,
+        "key": "_friend",
+        "value": "field_5a4f71c2b52d1"
+      },
+      {
+        "id": 19017,
+        "key": "desc_friend",
+        "value": "The interest in cooking doesn’t come from childhood, it began it’s growing until it got to the point where I realised I had to learn and train myself to be a real cook. Since then, I’ve done many things, and maybe the most meaningful was to travel around Europe promoting portuguese cooking, in a food truck. \r\nFor two months, I traveled through 20 european cities explaining the origins of our cuisine and cooking, not only to our emigrants, but also to the foreigners, to allow them to get a taste of portuguese products and cuisine.\r\nMy parents always had a farm, where I got used to see the products grow, which gave me this tool that is to value the local products that we have in Portugal and in this region."
+      },
+      {
+        "id": 19018,
+        "key": "_desc_friend",
+        "value": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 19019,
+        "key": "foto_friend",
+        "value": "5571"
+      },
+      {
+        "id": 19020,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 19021,
+        "key": "localidade",
+        "value": "Coimbra"
+      },
+      {
+        "id": 19022,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 19023,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en",
+          "es"
+        ]
+      },
+      {
+        "id": 19024,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 19025,
+        "key": "num_pessoas",
+        "value": "10"
+      },
+      {
+        "id": 19026,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 19027,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 19028,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 19029,
+        "key": "disp_horario",
+        "value": "10am-2pm"
+      },
+      {
+        "id": 19030,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 19031,
+        "key": "disp_data",
+        "value": "Saturday"
+      },
+      {
+        "id": 19032,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 19033,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren"
+        ]
+      },
+      {
+        "id": 19034,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 19035,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 19036,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 19037,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": ""
+      },
+      {
+        "id": 19038,
+        "key": "_yoast_wpseo_content_score",
+        "value": "30"
+      },
+      {
+        "id": 19642,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21445,
+        "key": "popular_posts",
+        "value": "16"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5320"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5315,
+    "name": "Velejar na Ria",
+    "slug": "velejar-na-ria",
+    "permalink": "https://myfriendsinportugal.com/product/velejar-na-ria/",
+    "date_created": "2018-01-09T15:12:06",
+    "date_created_gmt": "2018-01-09T15:12:06",
+    "date_modified": "2018-02-13T17:27:20",
+    "date_modified_gmt": "2018-02-13T17:27:20",
+    "type": "simple",
+    "status": "publish",
+    "featured": false,
+    "catalog_visibility": "visible",
+    "description": "<p>A Ria é navegável durante todo o ano. Neste topo norte da Ria de Aveiro há alguns braços navegáveis, dependendo das marés, onde existem diversos cais que se podem visitar, cais com histórias interessantes para serem contadas.<br />\nComo é um território muito ancestral, muito antigo, onde já passaram muitas gerações, e onde se criaram muitos imaginários, é possível, conhecendo os sítios e as pessoas, encontrar sempre motivo de interesse. Essas histórias são usadas na visita para que se perceba o caráter dos lugares.<br />\nAndar à vela na Ria, por si só já é suficientemente atractivo, mas pode ser ainda mais interessante visitá-la conhecendo e transportando depois connosco as histórias, as experiências dos sítios e das pessoas.</p>\n",
+    "short_description": "<p>Comece com uma visita a uma verdadeira oficina de recuperação de barcos à vela, onde poderá ver de perto as técnicas mais utilizadas para devolver estas embarcações ao seu meio natural. Depois, desfrute de um passeio à vela pelo topo norte da Ria de Aveiro, na zona de Ovar, passando pelos vários cais e conhecendo as suas histórias.</p>\n",
+    "sku": "",
+    "price": "50",
+    "regular_price": "50",
+    "sale_price": "",
+    "date_on_sale_from": null,
+    "date_on_sale_from_gmt": null,
+    "date_on_sale_to": null,
+    "date_on_sale_to_gmt": null,
+    "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&euro;</span>50,00</span>",
+    "on_sale": false,
+    "purchasable": true,
+    "total_sales": 0,
+    "virtual": false,
+    "downloadable": false,
+    "downloads": [],
+    "download_limit": -1,
+    "download_expiry": -1,
+    "external_url": "",
+    "button_text": "",
+    "tax_status": "taxable",
+    "tax_class": "",
+    "manage_stock": false,
+    "stock_quantity": null,
+    "in_stock": true,
+    "backorders": "no",
+    "backorders_allowed": false,
+    "backordered": false,
+    "sold_individually": false,
+    "weight": "",
+    "dimensions": {
+      "length": "",
+      "width": "",
+      "height": ""
+    },
+    "shipping_required": true,
+    "shipping_taxable": true,
+    "shipping_class": "",
+    "shipping_class_id": 0,
+    "reviews_allowed": true,
+    "average_rating": "0.00",
+    "rating_count": 0,
+    "related_ids": [],
+    "upsell_ids": [],
+    "cross_sell_ids": [],
+    "parent_id": 0,
+    "purchase_note": "",
+    "categories": [],
+    "tags": [],
+    "images": [
+      {
+        "id": 5669,
+        "date_created": "2018-02-15T17:37:35",
+        "date_created_gmt": "2018-02-15T17:37:35",
+        "date_modified": "2018-02-15T17:37:35",
+        "date_modified_gmt": "2018-02-15T17:37:35",
+        "src": "https://myfriendsinportugal.com/wp-content/uploads/2018/01/MFIP-CAPAec-01__MG_2115.jpg",
+        "name": "MFIP-CAPAec-01__MG_2115",
+        "alt": "",
+        "position": 0
+      }
+    ],
+    "attributes": [],
+    "default_attributes": [],
+    "variations": [],
+    "grouped_products": [],
+    "menu_order": 0,
+    "meta_data": [
+      {
+        "id": 18488,
+        "key": "friend",
+        "value": "Hélder Ventura"
+      },
+      {
+        "id": 18489,
+        "key": "desc_friend",
+        "value": "Hélder Ventura é de Ovar e conhece este território desde pequeno. Esteve sempre envolvido com os barcos, com a arte xávega, com os pescadores e com todo este imaginário da ria. À medida que foi crescendo, esteve constantemente ligado ao mar e à náutica, fazendo caça submarina na ria e no mar.\r\nInicialmente queria ser oceanógrafo, mas acabou por se tornar Arquitecto. Entretanto, interessou-se pela museologia e reparou que na região de Aveiro, mais especificamente em Ovar, havia uma história muito interessante relacionada com a Náutica de Recreio e todo o património que esta construiu. Tendo como pano de fundo esta riqueza e este património, decidiu juntamente com um grupo de amigos, criar uma associação para registar estes factos e promover a atractividade e o desenvolvimento desta realidade."
+      },
+      {
+        "id": 18490,
+        "key": "foto_friend",
+        "value": "5574"
+      },
+      {
+        "id": 18491,
+        "key": "localidade",
+        "value": "Ovar"
+      },
+      {
+        "id": 18492,
+        "key": "linguas",
+        "value": [
+          "pt",
+          "en"
+        ]
+      },
+      {
+        "id": 18493,
+        "key": "num_pessoas",
+        "value": "10"
+      },
+      {
+        "id": 18494,
+        "key": "duracao",
+        "value": "3"
+      },
+      {
+        "id": 18495,
+        "key": "disp_horario",
+        "value": "8h-19h"
+      },
+      {
+        "id": 18496,
+        "key": "disp_data",
+        "value": "Sábado"
+      },
+      {
+        "id": 18497,
+        "key": "acessibilidade",
+        "value": [
+          "forChildren"
+        ]
+      },
+      {
+        "id": 18498,
+        "key": "header_mfip_script",
+        "value": ""
+      },
+      {
+        "id": 18529,
+        "key": "_friend",
+        "value": "field_5a4f71c2b52d1"
+      },
+      {
+        "id": 18530,
+        "key": "_desc_friend",
+        "value": "field_5a4f720ab52d2"
+      },
+      {
+        "id": 18531,
+        "key": "_foto_friend",
+        "value": "field_5a4f724eb52d3"
+      },
+      {
+        "id": 18532,
+        "key": "_localidade",
+        "value": "field_5a4f72b0b52d4"
+      },
+      {
+        "id": 18533,
+        "key": "_linguas",
+        "value": "field_5a4f72eab52d5"
+      },
+      {
+        "id": 18534,
+        "key": "_num_pessoas",
+        "value": "field_5a4f733db52d6"
+      },
+      {
+        "id": 18535,
+        "key": "_duracao",
+        "value": "field_5a4f73abb52d7"
+      },
+      {
+        "id": 18536,
+        "key": "_disp_horario",
+        "value": "field_5a4f73eeb52d8"
+      },
+      {
+        "id": 18537,
+        "key": "_disp_data",
+        "value": "field_5a4f7441b52d9"
+      },
+      {
+        "id": 18538,
+        "key": "_acessibilidade",
+        "value": "field_5a4f746eb52da"
+      },
+      {
+        "id": 18539,
+        "key": "_header_mfip_script",
+        "value": "field_59b2abf5ec68d"
+      },
+      {
+        "id": 18540,
+        "key": "_yoast_wpseo_primary_product_cat",
+        "value": ""
+      },
+      {
+        "id": 18567,
+        "key": "_yoast_wpseo_content_score",
+        "value": "30"
+      },
+      {
+        "id": 20713,
+        "key": "_translation_porduct_type",
+        "value": "simple"
+      },
+      {
+        "id": 21312,
+        "key": "popular_posts",
+        "value": "22"
+      }
+    ],
+    "_links": {
+      "self": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products/5315"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://myfriendsinportugal.com/wp-json/wc/v2/products"
+        }
+      ]
+    }
+  }
+]

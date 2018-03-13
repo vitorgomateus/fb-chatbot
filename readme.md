@@ -1,15 +1,20 @@
 # Um Chatbot Experimental
 
+-handover protocol aplicado
+-faz request a informação da REST API do wooCommerce
+-consegue enviar webviews com sucesso
+
+----
+
 -to get events from manned messages of my page, I apparently need to subscribe the bot to: messages; messaging_handover; message_echoes; standby
 
--successful pass_thread_control!! Study logic to converse only with owning threads. each incoming
- message says if I'm owning it or not?
+
 
 -fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
 
 -https://pypi.python.org/pypi/WooCommerce
 	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
-	get error -.-
+	FUCNIONA CANECO!!!
 
 -bot reage a várias mensagens em simultaneo :S
 

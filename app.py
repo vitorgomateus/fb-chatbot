@@ -124,7 +124,7 @@ def send_message(recipient_id, message_text):
         log(r.status_code)
         log(r.text)
 
-def get_send_products(category):
+def get_send_products(category, recipient):
     log("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
 
     
@@ -140,33 +140,34 @@ def get_send_products(category):
     #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
     w = wc_api_mfip.get("products?status=publish")
-    produtoos = w.json()
+     #"name": "Ship Your Idea",
+
+    #"permalink": "https://example.com/product/ship-your-idea-22/",
+   # "images": [
+   # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
+    response_products = w.json()
     log("WC_RESPONSE ? ")
-    #log(produtoos[0]["name"])
-    log(w.text)
+    log(response_products[0]["name"])
+    #log(w.text)
 
-    # params = {
-    #     #"access_token": os.environ["PAGE_ACCESS_TOKEN"]
-    #     "consumer_key": os.environ["WC_CONSUMER_KEY"],
-    #     "consumer_secret": os.environ["WC_CONSUMER_SECRET"]
-    # }
-    # headers = {
-    #     "Content-Type": "application/json"
-    # }
 
-    # if category == 0:
-    #     data = json.dumps({
-    #     })
-    # else:                                                       #Set chosen category
-    #     data = json.dumps({
-    #     })
+    arr_title=[]
+    arr_title[0]=response_products[0]["name"]
+    arr_title[1]=response_products[1]["name"]
+    arr_title[2]=response_products[2]["name"]
+    arr_image=[]
+    arr_image[0]=response_products[0]["images"][0]["src"]
+    arr_image[1]=response_products[1]["images"][0]["src"]
+    arr_image[2]=response_products[2]["images"][0]["src"]
+    arr_link=[]
+    arr_link[0]=response_products[0]["permalink"]
+    arr_link[1]=response_products[1]["permalink"]
+    arr_link[2]=response_products[2]["permalink"]
+    send_webview( arr_title, arr_image, arr_link, recipient)
 
-    # w = requests.get("https://www.myfriendsinportugal.com/wp-json/wc/v2/products", params=params, headers=headers, data=data)
-    # if w.status_code != 200:
-    #     log(w.status_code)
-    #     log(w.text)
 
-def send_webview(title_arr, img_arr, url_arr):
+
+def send_webview(title_arr, img_arr, url_arr, recipient_id):
     log("NO* SEND_WEBVIEW")
     # iterate through arr...
     paramsWebview = {
@@ -186,35 +187,39 @@ def send_webview(title_arr, img_arr, url_arr):
                 "template_type":"generic",
                 "elements":[
                    {
-                    "title":"Welcome!",
-                    "image_url":"https://images.pexels.com/photos/287487/pexels-photo-287487.jpeg?w=200&h=100&auto=compress&cs=tinysrgb",
-                    "subtitle":"We have the right explosion for everyone.",
+                    "title":title_arr[0],
+                    "image_url":img_arr[0],
+                    "subtitle":"",
                     "buttons":[
                         {
                             "type":"web_url",
-                            "url":"https://www.messenger.com/",
-                            "title":"View Website"
-                          },{
-                            "type":"web_url",
-                            "url":"https://www.messenger.com/",
-                            "title":"View Website"
-                          }            
+                            "url":url_arr[0],
+                            "title":"consultar"
+                          }          
                     ]      
                   },
                   {
-                    "title":"Welcome 2!",
-                    "image_url":"https://images.pexels.com/photos/287487/pexels-photo-287487.jpeg?w=200&h=100&auto=compress&cs=tinysrgb",
-                    "subtitle":"We have the right pop for everyone.",
+                    "title":title_arr[1],
+                    "image_url":img_arr[1],
+                    "subtitle":"",
                     "buttons":[
                         {
                             "type":"web_url",
-                            "url":"https://www.messenger.com/",
-                            "title":"View Website"
-                          },{
+                            "url":url_arr[1],
+                            "title":"consultar"
+                          }             
+                    ]      
+                  },
+                  {
+                    "title":title_arr[2],
+                    "image_url":img_arr[2],
+                    "subtitle":"",
+                    "buttons":[
+                        {
                             "type":"web_url",
-                            "url":"https://www.messenger.com/",
-                            "title":"View Website"
-                          }              
+                            "url":url_arr[2],
+                            "title":"consultar"
+                          }             
                     ]      
                   }
                 ]
@@ -222,10 +227,10 @@ def send_webview(title_arr, img_arr, url_arr):
             }
         }
     })
-    # r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=paramsWebview, headers=headersWebview, data=dataWebview)
-    # if r.status_code != 200:
-    #    log(r.status_code)
-    #    log(r.text)
+    wv = requests.post("https://graph.facebook.com/v2.6/me/messages", params=paramsWebview, headers=headersWebview, data=dataWebview)
+     if wv.status_code != 200:
+        log(wv.status_code)
+        log(wv.text)
 
 def pass_thread_control(chatter_id):
     passData = json.dumps({
