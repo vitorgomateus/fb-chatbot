@@ -127,7 +127,7 @@ def send_message(recipient_id, message_text):
 def get_send_products(category):
     log("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
 
-    data={"status":"publish"}
+    
 
     wc_api_mfip = API(
         url="https://myfriendsinportugal.com",
@@ -139,7 +139,7 @@ def get_send_products(category):
     )
     #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
-    w = wc_api_mfip.get("products", data)
+    w = wc_api_mfip.get("products?status=publish")
     produtoos = w.json()
     log("WC_RESPONSE ? ")
     #log(produtoos[0]["name"])
