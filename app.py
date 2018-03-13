@@ -142,7 +142,7 @@ def get_send_products(category):
     produtoos = w.json()
     log("WC_RESPONSE ? ")
     log(produtoos[0]["name"])
-    #log(w.text)
+    log(w.text)
 
     # params = {
     #     #"access_token": os.environ["PAGE_ACCESS_TOKEN"]
@@ -243,17 +243,24 @@ def pass_thread_control(chatter_id):
     hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
     
     if hj.status_code != 200:
-        log(r.status_code)
-        log(r.text)
+        log(hj.status_code)
+        log(hj.text)
     else:
         log("HANDOVER")
 
-def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku
+
+
+def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku 
+
+                                ### This function is giving me errors, but it's not clear what the problem is.
+                                ### I always call it with only one parameter, a string or a 'dict', 
+                                ###     and usually there is no problem.
+                                ### but when I call it to log the http response is when errors show up.
     try:
         if type(msg) is dict:
             msg = json.dumps(msg)
         else:
-            msg = unicode(msg).format(*args, **kwargs)
+            msg = unicode(msg).format(*args, **kwargs) ### If I comment this line, no error shows up
             #msg="Oh, well.."
         print u"{}: {}".format(datetime.now(), msg)
     except UnicodeEncodeError:
