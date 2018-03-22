@@ -23,7 +23,7 @@ def get_send_products(category, recipient):
     )
             #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
-    w = wc_api_mfip.get("products?status=publish")
+    w = wc_api_mfip.get("products?status=publish&per_page=5")
      
     response_products = w.json()
     logar(response_products[0]["name"])
