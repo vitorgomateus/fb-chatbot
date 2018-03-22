@@ -7,11 +7,15 @@
 ----
 
 -to get events from manned messages of my page, I apparently need to subscribe the bot to: messages; messaging_handover; message_echoes; standby
+
 -https://pypi.python.org/pypi/WooCommerce
 	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
--BD
+	
+O - BD
 https://pypi.python.org/pypi/python-firebase/1.2
 https://console.firebase.google.com/project/bottesting-testbotting/overview
+O - Wordpress REST API para armazenar dados dos utilizadores no facebook? - no good keeping people's data :/
+
 -< https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies
 
 O - fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
@@ -24,7 +28,6 @@ O - tags ou atributes para filtrar linguas
 	É mesmo preciso usar o WC_API pyPa para conseguir obter produtos? - https://nology.de/wordpress-api-v2-with-polylang-and-acf.html
 	Ou posso simplesmente usar o Requests pyPa?
 
-O - Wordpress REST API para armazenar dados dos utilizadores no facebook? - no good keeping people's data :/
 
 O - Interpretar texto
 	-regex?

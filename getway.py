@@ -9,14 +9,10 @@ from outway import send_webview
 
 
 def get_send_products(category, recipient):
-    logar("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
+    
 
-    #ffjfjfjfjvjksdir gdjhkvfhdghvdv,tcj, kgr,ggr gxx jfjfvaonron
-
-
-
-    #fkcnvnv
-
+    #---------------------------------------------------------------------------------WOOCOMMERCE PyPa
+    logar("REQUEST PRODUCTS *WC_PyPa* cat={cate}".format(cate=category))
     wc_api_mfip = API(
         url="https://myfriendsinportugal.com",
         consumer_key= os.environ["WC_CONSUMER_KEY"],
@@ -33,32 +29,36 @@ def get_send_products(category, recipient):
             #"permalink": "https://example.com/product/ship-your-idea-22/",
             # "images": [
             # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
-    response_products = w.json()
+    #response_products = w.json()
     logar("WC_RESPONSE ? ")
-    logar(response_products[0]["name"])
-    #logar(w.text)
+    #logar(response_products[0]["name"])
+    logar(w.text)
 
-
-    ### HTTP REQUEST for getting products?
-                                            # params = {
-                                            #     "access_token": os.environ["PAGE_ACCESS_TOKEN"]
-                                            # }
-                                            # headers = {
-                                            #     "Content-Type": "application/json"
-                                            # }
-                                            # data = json.dumps({
-                                            #     "recipient": {
-                                            #         "id": recipient_id
-                                            #     },
-                                            #     "message":{
-                                            #         "text": message_text
-                                            #     }
-                                            # })
-                                            
-                                            # wcp = requests.post("https://myfriendsinportugal.com/wp/v2/posts", params=params, headers=headers, data=data)
-                                            # if wcp.status_code != 200:
-                                            #     logar(wcp.status_code)
-                                            #     logar(wcp.text)
+    #----------------------------------------------------------------------------------REQUESTS PyPa
+    # logar("REQUEST PRODUCTS *REQUESTS* cat={cate}".format(cate=category))
+    # params = {
+    #     "access_token": os.environ["PAGE_ACCESS_TOKEN"]
+    # }
+    # headers = {
+    #     "Content-Type": "application/json"
+    # }
+    # data = json.dumps({
+    #     url="https://myfriendsinportugal.com",
+    #     consumer_key= os.environ["WC_CONSUMER_KEY"],
+    #     consumer_secret= os.environ["WC_CONSUMER_SECRET"],
+    #     wp_api=True,
+    #     version="wc/v2",
+    #     query_string_auth=True 
+    # })
+    
+    # wcp = requests.post("https://myfriendsinportugal.com/wp/v2/posts", params=params, headers=headers, data=data)
+    
+    # logar("WC_REUQESTS_RESPONSE ? ")
+    # # logar(response_products[0]["name"])
+    # logar(wcp.text)
+    # if wcp.status_code != 200:
+    #     logar(wcp.status_code)
+    #     logar(wcp.text)
 
 
     #arr_title=[response_products[0]["name"], response_products[1]["name"], response_products[2]["name"]]
