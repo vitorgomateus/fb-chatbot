@@ -4,7 +4,7 @@ import json
 
 import requests
 
-from app import log
+from util import logar
 
 def senda_message(recipient_id, message_text):
 

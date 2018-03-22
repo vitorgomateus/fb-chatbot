@@ -8,6 +8,7 @@ import requests
 from flask import Flask, request
 from woocommerce import API
 from funcao import senda_message
+from util import logar
 
 app = Flask(__name__)
 
@@ -31,20 +32,20 @@ def webhook():
 
     
     data = request.get_json()
-    log("_DATA_")
-    log(data)  # you may not want to log every incoming message in production, but it's good for testing
+    logar("_DATA_")
+    logar(data)  # you may not want to log every incoming message in production, but it's good for testing
 
     # VTOR
     # if data["object"] == "page":
     #     for entry in data["entry"]:
     #         for messaging_event in entry["messaging"]:
     #             if messaging_event["message"].get("is_echo"):
-    #                 log("WE GOT ECHO")
+    #                 logar("WE GOT ECHO")
     #
     #strdata = str(data)
     #strdata= json.dumps(data)
     #if "standby" in strdata:
-       #log("WE HAVE STANBY")
+       #logar("WE HAVE STANBY")
     #
     #time.sleep(300) 
     # if data["object"] == "page":
@@ -55,7 +56,7 @@ def webhook():
 
             if entry.get("standby"):
                 for standby_event in entry["standby"]:  # a message was sent in standby
-                    log("STANBY EVENT")
+                    logar("STANBY EVENT")
 
             elif entry.get("messaging"):
 
@@ -67,7 +68,7 @@ def webhook():
                         recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
 
                         if messaging_event["message"].get("attachments"):
-                            log("Bot got a sticker!")
+                            logar("Bot got a sticker!")
                         else:
                             message_text = messaging_event["message"]["text"]  # the message's text
                             if message_text == "produtos":
@@ -77,11 +78,11 @@ def webhook():
                                pass
 
                     if messaging_event.get("request_thread_control"):  # ADMIN requested control
-                        log("ADMIN REQUEST CONTROL sender_id={sendr}".format(sendr=sender_id_pass))
+                        logar("ADMIN REQUEST CONTROL sender_id={sendr}".format(sendr=sender_id_pass))
                         pass_thread_control(sender_id_pass)
 
                     if messaging_event.get("request_thread_control"):  # ADMIN control passed
-                        log("PASS CONTROL TO ADMIN")
+                        logar("PASS CONTROL TO ADMIN")
                         
                     if messaging_event.get("delivery"):  # delivery confirmation
                         pass
@@ -93,9 +94,9 @@ def webhook():
                         pass
 
             else:
-                log("DEVDO - No Standby, neither Messaging")
+                logar("DEVDO - No Standby, neither Messaging")
     else:
-        log("DEVDO - no PAGE")
+        logar("DEVDO - no PAGE")
 
     return "ok", 200
 
@@ -103,7 +104,7 @@ def webhook():
 
 
 def get_send_products(category, recipient):
-    log("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
+    logar("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
 
     #ffjfjfjfjvjksdir gdjhkvfhdghvdv,tcj, kgr,ggr gxx jfjfvaonron
 
@@ -128,9 +129,9 @@ def get_send_products(category, recipient):
             # "images": [
             # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
     response_products = w.json()
-    log("WC_RESPONSE ? ")
-    log(response_products[0]["name"])
-    #log(w.text)
+    logar("WC_RESPONSE ? ")
+    logar(response_products[0]["name"])
+    #logar(w.text)
 
 
     ### HTTP REQUEST for getting products?
@@ -151,8 +152,8 @@ def get_send_products(category, recipient):
                                             
                                             # wcp = requests.post("https://myfriendsinportugal.com/wp/v2/posts", params=params, headers=headers, data=data)
                                             # if wcp.status_code != 200:
-                                            #     log(wcp.status_code)
-                                            #     log(wcp.text)
+                                            #     logar(wcp.status_code)
+                                            #     logar(wcp.text)
 
 
     #arr_title=[response_products[0]["name"], response_products[1]["name"], response_products[2]["name"]]
@@ -166,7 +167,7 @@ def get_send_products(category, recipient):
 
 
 def send_webview(title_arr, img_arr, url_arr, recipient_id):
-    log("NO* SEND_WEBVIEW")
+    logar("NO* SEND_WEBVIEW")
     # iterate through arr...
     paramsWebview = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
@@ -227,8 +228,8 @@ def send_webview(title_arr, img_arr, url_arr, recipient_id):
     })
     wv = requests.post("https://graph.facebook.com/v2.6/me/messages", params=paramsWebview, headers=headersWebview, data=dataWebview)
     if wv.status_code != 200:
-        log(wv.status_code)
-        log(wv.text)
+        logar(wv.status_code)
+        logar(wv.text)
 
 def pass_thread_control(chatter_id):
     passData = json.dumps({
@@ -247,29 +248,12 @@ def pass_thread_control(chatter_id):
     hj = requests.post("https://graph.facebook.com/v2.6/me/pass_thread_control", params=passParams, headers=passHeaders, data=passData)
     
     if hj.status_code != 200:
-        log(hj.status_code)
-        log(hj.text)
+        logar(hj.status_code)
+        logar(hj.text)
     else:
-        log("HANDOVER")
+        logar("HANDOVER")
 
 
-
-def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku 
-
-                                ### This function is giving me errors, but it's not clear what the problem is.
-                                ### I always call it with only one parameter, a string or a 'dict', 
-                                ###     and usually there is no problem.
-                                ### but when I call it to log the http response is when errors show up.
-    try:
-        if type(msg) is dict:
-            msg = json.dumps(msg)
-        #else:
-            #msg = unicode(msg).format(*args, **kwargs) ### If I comment this line, no error shows up
-            #msg=msg
-        print u"{}: {}".format(datetime.now(), msg)
-    except UnicodeEncodeError:
-        pass  # squash logging errors in case of non-ascii text
-    sys.stdout.flush()
 
 
 if __name__ == '__main__':
