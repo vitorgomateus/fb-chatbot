@@ -47,8 +47,7 @@ def webhook():
     #if "standby" in strdata:
        #logar("WE HAVE STANBY")
     #
-    #time.sleep(300) 
-    # if data["object"] == "page":
+    time.sleep(500) 
 
     #   original
     if data["object"] == "page":
@@ -74,7 +73,7 @@ def webhook():
                             if message_text == "produtos":
                                 get_send_products(0, sender_id)
                             else:
-                               senda_message(sender_id, "BOT :D")
+                               send_message(sender_id, "BOT :D")
                                pass
 
                     if messaging_event.get("request_thread_control"):  # ADMIN requested control

@@ -3,6 +3,10 @@
 	x-> handover protocol aplicado
 	x-> faz request a informação da REST API do wooCommerce
 	x-> consegue enviar webviews com sucesso
+	o-> quick replies
+	o-> writting smtg
+	o-> interpretar texto
+	o-> guardar informação
 
 ----
 
@@ -12,15 +16,13 @@
 	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
 
 O - BD
-https://pypi.python.org/pypi/python-firebase/1.2
+https://pypi.python.org/pypi/python-firebase/1.2	
 https://console.firebase.google.com/project/bottesting-testbotting/overview
 O - Wordpress REST API para armazenar dados dos utilizadores no facebook? - no good keeping people's data :/
 
 -< https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies
-
-O - fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
-
-O - bot reage a várias mensagens em simultaneo :S
+-< https://blog.messengerdevelopers.com/using-the-webview-to-create-richer-bot-to-user-interactions-ed8a789523c6
+-< https://stanfy.com/blog/facebook-messenger-bots-interactions/
 
 X - tags ou atributes para filtrar linguas
 	- Wordpress API?		https://pypi.python.org/pypi/wordpress-api/1.2.6	
@@ -30,10 +32,16 @@ X - tags ou atributes para filtrar linguas
 	Ou posso simplesmente usar o Requests pyPa?
 	x - Não tenho controlo sobre que lingua escolhe, assumo que escolha a lingua do mesmo modo que o site o faz.
 
+O - fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
+
 
 O - Interpretar texto
 	-regex?
 
+O - bot reage a várias mensagens em simultaneo :S
+
+
+O - ITERATE!!!
 
 -> It's going good and looking alive ;)
 
