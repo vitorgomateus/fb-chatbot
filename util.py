@@ -1,7 +1,8 @@
 
 import sys
 import json
-from datetime
+from datetime import datetime
+
 from util import logar
 
 def logar(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku 
