@@ -10,7 +10,7 @@
 
 -https://pypi.python.org/pypi/WooCommerce
 	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
-	
+
 O - BD
 https://pypi.python.org/pypi/python-firebase/1.2
 https://console.firebase.google.com/project/bottesting-testbotting/overview
@@ -22,11 +22,13 @@ O - fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
 
 O - bot reage a várias mensagens em simultaneo :S
 
-O - tags ou atributes para filtrar linguas
+X - tags ou atributes para filtrar linguas
 	- Wordpress API?		https://pypi.python.org/pypi/wordpress-api/1.2.6	
 	O WC tem os post_type=product available para a rest api? - http://v2.wp-api.org/extending/custom-content-types/
 	É mesmo preciso usar o WC_API pyPa para conseguir obter produtos? - https://nology.de/wordpress-api-v2-with-polylang-and-acf.html
+		ESTE FUNCIONOU :D
 	Ou posso simplesmente usar o Requests pyPa?
+	x - Não tenho controlo sobre que lingua escolhe, assumo que escolha a lingua do mesmo modo que o site o faz.
 
 
 O - Interpretar texto
