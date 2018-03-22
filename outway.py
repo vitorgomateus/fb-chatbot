@@ -6,6 +6,11 @@ from util import logar
 
 def send_webview(title_arr, img_arr, url_arr, recipient_id):
     logar("SEND_WEBVIEW")
+
+    logar("img_arr")
+    logar(img_arr)
+    logar("img_arr[1]")
+    logar(img_arr[1])
     # iterate through arr...
     paramsWebview = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
