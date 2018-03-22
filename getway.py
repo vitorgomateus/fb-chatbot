@@ -23,7 +23,7 @@ def get_send_products(category, recipient):
     )
             #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
-    w = wc_api_mfip.get("products?status=publish&filter[lang]=pt")
+    w = wc_api_mfip.get("products?status=publish")
             #"name": "Ship Your Idea",
 
             #"permalink": "https://example.com/product/ship-your-idea-22/",
