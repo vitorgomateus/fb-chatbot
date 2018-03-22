@@ -1,13 +1,13 @@
 import os
-import sys
+#import sys
 import json
-import time
-from datetime import datetime
+#from datetime import datetime
 
 import requests
 from flask import Flask, request
-from woocommerce import API
-from funcao import senda_message
+
+from inway import get_send_products
+from outway import senda_message, send_webview
 from util import logar
 
 app = Flask(__name__)
@@ -103,133 +103,10 @@ def webhook():
 
 
 
-def get_send_products(category, recipient):
-    logar("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
-
-    #ffjfjfjfjvjksdir gdjhkvfhdghvdv,tcj, kgr,ggr gxx jfjfvaonron
 
 
 
-    #fkcnvnv
 
-    wc_api_mfip = API(
-        url="https://myfriendsinportugal.com",
-        consumer_key= os.environ["WC_CONSUMER_KEY"],
-        consumer_secret= os.environ["WC_CONSUMER_SECRET"],
-        wp_api=True,
-        version="wc/v2",
-        query_string_auth=True 
-    )
-            #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
-
-    w = wc_api_mfip.get("products?status=publish&filter[lang]=pt")
-            #"name": "Ship Your Idea",
-
-            #"permalink": "https://example.com/product/ship-your-idea-22/",
-            # "images": [
-            # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
-    response_products = w.json()
-    logar("WC_RESPONSE ? ")
-    logar(response_products[0]["name"])
-    #logar(w.text)
-
-
-    ### HTTP REQUEST for getting products?
-                                            # params = {
-                                            #     "access_token": os.environ["PAGE_ACCESS_TOKEN"]
-                                            # }
-                                            # headers = {
-                                            #     "Content-Type": "application/json"
-                                            # }
-                                            # data = json.dumps({
-                                            #     "recipient": {
-                                            #         "id": recipient_id
-                                            #     },
-                                            #     "message":{
-                                            #         "text": message_text
-                                            #     }
-                                            # })
-                                            
-                                            # wcp = requests.post("https://myfriendsinportugal.com/wp/v2/posts", params=params, headers=headers, data=data)
-                                            # if wcp.status_code != 200:
-                                            #     logar(wcp.status_code)
-                                            #     logar(wcp.text)
-
-
-    #arr_title=[response_products[0]["name"], response_products[1]["name"], response_products[2]["name"]]
-    
-    #arr_image=[response_products[0]["images"][0]["src"], response_products[1]["images"][0]["src"], response_products[2]["images"][0]["src"]]
-    
-    #arr_link=[response_products[0]["permalink"], response_products[1]["permalink"], response_products[2]["permalink"]]
-    
-    send_webview( arr_title, arr_image, arr_link, recipient)
-
-
-
-def send_webview(title_arr, img_arr, url_arr, recipient_id):
-    logar("NO* SEND_WEBVIEW")
-    # iterate through arr...
-    paramsWebview = {
-        "access_token": os.environ["PAGE_ACCESS_TOKEN"]
-    }
-    headersWebview = {
-        "Content-Type": "application/json"
-    }
-    dataWebview = json.dumps({
-        "recipient": {
-            "id": recipient_id
-        },
-        "message":{
-            "attachment":{
-              "type":"template",
-              "payload":{
-                "template_type":"generic",
-                "elements":[
-                   {
-                    "title":title_arr[0],
-                    "image_url":img_arr[0],
-                    "subtitle":"",
-                    "buttons":[
-                        {
-                            "type":"web_url",
-                            "url":url_arr[0],
-                            "title":"consultar"
-                          }          
-                    ]      
-                  },
-                  {
-                    "title":title_arr[1],
-                    "image_url":img_arr[1],
-                    "subtitle":"",
-                    "buttons":[
-                        {
-                            "type":"web_url",
-                            "url":url_arr[1],
-                            "title":"consultar"
-                          }             
-                    ]      
-                  },
-                  {
-                    "title":title_arr[2],
-                    "image_url":img_arr[2],
-                    "subtitle":"",
-                    "buttons":[
-                        {
-                            "type":"web_url",
-                            "url":url_arr[2],
-                            "title":"consultar"
-                          }             
-                    ]      
-                  }
-                ]
-              }
-            }
-        }
-    })
-    wv = requests.post("https://graph.facebook.com/v2.6/me/messages", params=paramsWebview, headers=headersWebview, data=dataWebview)
-    if wv.status_code != 200:
-        logar(wv.status_code)
-        logar(wv.text)
 
 def pass_thread_control(chatter_id):
     passData = json.dumps({
