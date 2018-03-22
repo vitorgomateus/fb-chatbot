@@ -7,7 +7,7 @@ import requests
 from flask import Flask, request
 
 from getway import get_send_products
-from outway import senda_message, send_webview
+from outway import senda_message
 from util import logar
 
 app = Flask(__name__)

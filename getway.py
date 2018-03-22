@@ -5,7 +5,7 @@ import requests
 from woocommerce import API
 
 from util import logar
-from outway import send_webview
+from outway import send_message
 
 import string
 
