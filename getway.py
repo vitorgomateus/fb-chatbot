@@ -67,4 +67,4 @@ def get_send_products(category, recipient):
     
     #arr_link=[response_products[0]["permalink"], response_products[1]["permalink"], response_products[2]["permalink"]]
     
-    send_webview( arr_title, arr_image, arr_link, recipient)
+    #send_webview( arr_title, arr_image, arr_link, recipient)
