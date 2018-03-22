@@ -30,9 +30,10 @@ def get_send_products(category, recipient):
             # "images": [
             # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
     #response_products = w.json()
-    logar("WC_RESPONSE ? ")
     #logar(response_products[0]["name"])
-    logar(w.text)
+    logar("WC_RESPONSE ? ")
+    logar(type(w))
+    logar(w.json())
 
     #----------------------------------------------------------------------------------REQUESTS PyPa
     # logar("REQUEST PRODUCTS *REQUESTS* cat={cate}".format(cate=category))
