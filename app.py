@@ -6,7 +6,7 @@ import json
 import requests
 from flask import Flask, request
 
-from inway import get_send_products
+from getway import get_send_products
 from outway import senda_message, send_webview
 from util import logar
 
