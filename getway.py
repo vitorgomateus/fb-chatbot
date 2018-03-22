@@ -24,16 +24,12 @@ def get_send_products(category, recipient):
             #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
     w = wc_api_mfip.get("products?status=publish")
-            #"name": "Ship Your Idea",
-
-            #"permalink": "https://example.com/product/ship-your-idea-22/",
-            # "images": [
-            # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
-    #response_products = w.json()
-    #logar(response_products[0]["name"])
+     
+    response_products = w.json()
+    logar(response_products[0]["name"])
     logar("WC_RESPONSE ? ")
     logar(type(w))
-    logar(w.json())
+    logar(w.text)
 
     #----------------------------------------------------------------------------------REQUESTS PyPa
     # logar("REQUEST PRODUCTS *REQUESTS* cat={cate}".format(cate=category))
