@@ -37,6 +37,9 @@ def get_send_products(category, recipient):
     
     arr_image=[response_products[0]["images"][0]["src"], response_products[1]["images"][0]["src"], response_products[2]["images"][0]["src"]]
     
-    arr_link= [response_products[0]["permalink"], response_products[1]["permalink"], response_products[2]["permalink"]]
-    
+   # arr_link= [response_products[0]["permalink"], response_products[1]["permalink"], response_products[2]["permalink"]]
+    arr_link= [string.replace(response_products[0]["permalink"], ".jpg", "-300x300.jpg"), 
+        string.replace(response_products[1]["permalink"], ".jpg", "-300x300.jpg"), 
+        string.replace(response_products[0]["permalink"], ".jpg", "-300x300.jpg")
+    ]
     send_webview( arr_title, arr_image, arr_link, recipient)
