@@ -4,6 +4,8 @@ import json
 
 import requests
 
+from app import log
+
 def senda_message(recipient_id, message_text):
 
     log("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
