@@ -8,7 +8,7 @@ from util import logar
 def send_message(message_text, recipient_id, title_arr, img_arr, url_arr):
     send_object = "there seems to be an error"
     
-    if(message_text==0)
+    if(message_text==0):
     #                                                     -------------------------------Web View
         logar("SEND_WEBVIEW")
 
@@ -44,7 +44,7 @@ def send_message(message_text, recipient_id, title_arr, img_arr, url_arr):
         }
             
 
-    else
+    else:
     #                                                     -------------------------------Normal Text
         logar("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
         send_object = { "text": message_text }
