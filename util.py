@@ -3,8 +3,6 @@ import sys
 import json
 from datetime import datetime
 
-from util import logar
-
 def logar(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku 
 
                                 ### This function is giving me errors, but it's not clear what the problem is.
