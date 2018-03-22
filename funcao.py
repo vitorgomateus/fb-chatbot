@@ -4,7 +4,7 @@ import json
 
 import requests
 
-def send_message(recipient_id, message_text):
+def senda_message(recipient_id, message_text):
 
     log("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
 

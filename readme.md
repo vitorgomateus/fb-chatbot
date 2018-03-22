@@ -1,33 +1,34 @@
 # Um Chatbot Experimental
 
--handover protocol aplicado
--faz request a informação da REST API do wooCommerce
--consegue enviar webviews com sucesso
+	x-> handover protocol aplicado
+	x-> faz request a informação da REST API do wooCommerce
+	x-> consegue enviar webviews com sucesso
 
 ----
->												File "/app/app.py", line 74, in webhook
->2018-03-13T15:21:34.456796+00:00 app[web.1]:     get_send_products(0, sender_id)
->2018-03-13T15:21:34.456798+00:00 app[web.1]:   File "/app/app.py", line 155, in get_send_products
->2018-03-13T15:21:34.456799+00:00 app[web.1]:     arr_title[0]=response_products[0]["name"]
->2018-03-13T15:21:34.456801+00:00 app[web.1]: IndexError: list assignment index out of range
 
 -to get events from manned messages of my page, I apparently need to subscribe the bot to: messages; messaging_handover; message_echoes; standby
-
-
-
--fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
-
 -https://pypi.python.org/pypi/WooCommerce
 	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
-	FUCNIONA CANECO!!!
-
--bot reage a várias mensagens em simultaneo :S
-
 -BD
 https://pypi.python.org/pypi/python-firebase/1.2
 https://console.firebase.google.com/project/bottesting-testbotting/overview
-
 -< https://developers.facebook.com/docs/messenger-platform/send-messages/quick-replies
+
+O - fazer esperar um bocadinho para dar tempo a uma pessoa de pegar na conversa?
+
+O - bot reage a várias mensagens em simultaneo :S
+
+O - tags ou atributes para filtrar linguas
+	- Wordpress API?		https://pypi.python.org/pypi/wordpress-api/1.2.6	
+	O WC tem os post_type=product available para a rest api? - http://v2.wp-api.org/extending/custom-content-types/
+	É mesmo preciso usar o WC_API pyPa para conseguir obter produtos? - https://nology.de/wordpress-api-v2-with-polylang-and-acf.html
+	Ou posso simplesmente usar o Requests pyPa?
+
+O - Wordpress REST API para armazenar dados dos utilizadores no facebook? - no good keeping people's data :/
+
+O - Interpretar texto
+	-regex?
+
 
 -> It's going good and looking alive ;)
 

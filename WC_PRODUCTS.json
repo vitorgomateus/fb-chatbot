@@ -1,3 +1,22 @@
+/*wc_api_mfip = API(
+        url="https://myfriendsinportugal.com",
+        consumer_key= os.environ["WC_CONSUMER_KEY"],
+        consumer_secret= os.environ["WC_CONSUMER_SECRET"],
+        wp_api=True,
+        version="wc/v2",
+        query_string_auth=True 
+    )
+            #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
+
+    w = wc_api_mfip.get("products?status=publish&filter[lang]=pt")
+            #"name": "Ship Your Idea",
+
+            #"permalink": "https://example.com/product/ship-your-idea-22/",
+            # "images": [
+            # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
+    
+    log("WC_RESPONSE ? ")
+    #log(w.text)*/
 [
   {
     "id": 5702,

@@ -7,7 +7,7 @@ from datetime import datetime
 import requests
 from flask import Flask, request
 from woocommerce import API
-#from funcao import send_message
+from funcao import senda_message
 
 app = Flask(__name__)
 
@@ -73,7 +73,7 @@ def webhook():
                             if message_text == "produtos":
                                 get_send_products(0, sender_id)
                             else:
-                               send_message(sender_id, "BOT :D")
+                               senda_message(sender_id, "BOT :D")
                                pass
 
                     if messaging_event.get("request_thread_control"):  # ADMIN requested control
@@ -100,34 +100,16 @@ def webhook():
     return "ok", 200
 
 
-def send_message(recipient_id, message_text):
 
-#       intact -v-
-    log("SENDing message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
-
-    params = {
-        "access_token": os.environ["PAGE_ACCESS_TOKEN"]
-    }
-    headers = {
-        "Content-Type": "application/json"
-    }
-    data = json.dumps({
-        "recipient": {
-            "id": recipient_id
-        },
-        "message":{
-            "text": message_text
-        }
-    })
-    r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
-    if r.status_code != 200:
-        log(r.status_code)
-        log(r.text)
 
 def get_send_products(category, recipient):
     log("NO* REQUEST PRODUCTS cat={cate}".format(cate=category))
 
-    
+    #ffjfjfjfjvjksdir gdjhkvfhdghvdv,tcj, kgr,ggr gxx jfjfvaonron
+
+
+
+    #fkcnvnv
 
     wc_api_mfip = API(
         url="https://myfriendsinportugal.com",
@@ -137,25 +119,47 @@ def get_send_products(category, recipient):
         version="wc/v2",
         query_string_auth=True 
     )
-    #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
+            #query_string_auth=True // Force Basic Authentication as query string true and using under HTTPS
 
-    w = wc_api_mfip.get("products?status=publish")
-     #"name": "Ship Your Idea",
+    w = wc_api_mfip.get("products?status=publish&filter[lang]=pt")
+            #"name": "Ship Your Idea",
 
-    #"permalink": "https://example.com/product/ship-your-idea-22/",
-   # "images": [
-   # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
+            #"permalink": "https://example.com/product/ship-your-idea-22/",
+            # "images": [
+            # "src": "https://example.com/wp-content/uploads/2017/03/T_4_front-11.jpg",
     response_products = w.json()
     log("WC_RESPONSE ? ")
     log(response_products[0]["name"])
     #log(w.text)
 
 
-    arr_title=[response_products[0]["name"], response_products[1]["name"], response_products[2]["name"]]
+    ### HTTP REQUEST for getting products?
+                                            # params = {
+                                            #     "access_token": os.environ["PAGE_ACCESS_TOKEN"]
+                                            # }
+                                            # headers = {
+                                            #     "Content-Type": "application/json"
+                                            # }
+                                            # data = json.dumps({
+                                            #     "recipient": {
+                                            #         "id": recipient_id
+                                            #     },
+                                            #     "message":{
+                                            #         "text": message_text
+                                            #     }
+                                            # })
+                                            
+                                            # wcp = requests.post("https://myfriendsinportugal.com/wp/v2/posts", params=params, headers=headers, data=data)
+                                            # if wcp.status_code != 200:
+                                            #     log(wcp.status_code)
+                                            #     log(wcp.text)
+
+
+    #arr_title=[response_products[0]["name"], response_products[1]["name"], response_products[2]["name"]]
     
-    arr_image=[response_products[0]["images"][0]["src"], response_products[1]["images"][0]["src"], response_products[2]["images"][0]["src"]]
+    #arr_image=[response_products[0]["images"][0]["src"], response_products[1]["images"][0]["src"], response_products[2]["images"][0]["src"]]
     
-    arr_link=[response_products[0]["permalink"], response_products[1]["permalink"], response_products[2]["permalink"]]
+    #arr_link=[response_products[0]["permalink"], response_products[1]["permalink"], response_products[2]["permalink"]]
     
     send_webview( arr_title, arr_image, arr_link, recipient)
 
