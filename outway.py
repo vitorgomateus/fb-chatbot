@@ -5,7 +5,7 @@ import json
 from util import logar
 
 def send_webview(title_arr, img_arr, url_arr, recipient_id):
-    logar("NO* SEND_WEBVIEW")
+    logar("SEND_WEBVIEW")
     # iterate through arr...
     paramsWebview = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]

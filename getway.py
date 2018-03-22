@@ -43,4 +43,6 @@ def get_send_products(category, recipient):
         string.replace(response_products[1]["permalink"], ".jpg", "-300x300.jpg"), 
         string.replace(response_products[0]["permalink"], ".jpg", "-300x300.jpg")
     ]
+    logar("arr_link")
+    logar(arr_link)
     send_webview( arr_title, arr_image, arr_link, recipient)
