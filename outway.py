@@ -35,11 +35,13 @@ def send_message(message_text, recipient_id, title_arr, img_arr, url_arr):
             logar("arr_elements")
             logar(arr_elements)
 
-        send_object = "attachment":{
-            "type":"template",
-            "payload":{
-                "template_type":"generic",
-                "elements": arr_elements
+        send_object ={
+            "attachment":{
+                "type":"template",
+                "payload":{
+                    "template_type":"generic",
+                    "elements": arr_elements
+                }
             }
         }
             
