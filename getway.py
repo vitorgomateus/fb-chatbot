@@ -7,6 +7,8 @@ from woocommerce import API
 from util import logar
 from outway import send_webview
 
+from string import replace
+
 
 def get_send_products(category, recipient):
     
