@@ -8,7 +8,7 @@ import requests
 from flask import Flask, request
 
 from getway import get_send_products
-from outway import send_message
+from outway import send_message, send_quick_reply
 from util import logar
 
 app = Flask(__name__)
@@ -73,6 +73,8 @@ def webhook():
                             message_text = messaging_event["message"]["text"]  # the message's text
                             if message_text == "produtos":
                                 get_send_products(0, sender_id)
+                            elif message_text =="qr":
+                                send_quick_reply("Reply to this", 0, sender_id)
                             else:
                                send_message("BOT :D", sender_id)
                                pass

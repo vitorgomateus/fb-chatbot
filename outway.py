@@ -48,6 +48,52 @@ def send_message(message_content, recipient_id):
         logar(wv.status_code)
         logar(wv.text)
 
+
+def send_quick_reply( text_str, set_num, recipient_id):
+    #https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/32x32/diagram_v2-23.png
+    #https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/32x32/diagram_v2-27.png
+    #https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/32x32/diagram_v2-10.png
+    #https://cdn1.iconfinder.com/data/icons/military-filled/64/army-09-48.png
+    qr= [
+      {
+        "content_type":"text",
+        "title":"Search",
+        "payload":"User Hit Search",
+        "image_url":"https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/32x32/diagram_v2-10.png"
+      },
+      {
+        "content_type":"location",
+        "title":"where do I send te nukes?"
+        "image_url":"https://cdn1.iconfinder.com/data/icons/military-filled/64/army-09-48.png"
+      },
+      {
+      "content_type":"text",
+      "title":"hit me please!!!",
+      "payload":"QR_COF",
+      "image_url":"https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/32x32/diagram_v2-23.png"
+      }
+    ]
+
+    data = json.dumps({
+        "recipient": {
+            "id": recipient_id
+        },
+        "message": {
+            "text": text_str,
+            "quick_replies":qr
+        }
+    })
+    params = {
+        "access_token": os.environ["PAGE_ACCESS_TOKEN"]
+    }
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    wv = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
+    if wv.status_code != 200:
+        logar(wv.status_code)
+        logar(wv.text)
 # def senda_message(recipient_id, message_content):
 
     

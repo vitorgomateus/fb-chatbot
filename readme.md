@@ -58,7 +58,7 @@ heroku config:add VERIFY_TOKEN=your_verification_token_here
 
 # About Conversations flowgram
 
-cliente catching flow:
+cliente retention flow:
 -Awereness
 -Cosideration
 -Purchase
