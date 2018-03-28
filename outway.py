@@ -34,10 +34,11 @@ def send_message(message_text, recipient_id, title_arr, img_arr, url_arr):
                       }
             logar("element{num}".format(num=i))
             logar(element)
-            arr_elements += element;
+            arr_elements.extend(element)
 
             logar("arr_elements")
             logar(arr_elements)
+            #['buttons', 'subtitle', 'image_url', 'title', 'buttons', 'subtitle', 'image_url', 'title', 'buttons', 'subtitle', 'image_url', 'title']
 
         send_object ={
             "attachment":{

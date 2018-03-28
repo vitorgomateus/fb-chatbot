@@ -1,0 +1,72 @@
+
+2018-03-28T17:03:18.579342+00:00 app[web.1]: 2018-03-28 17:03:18.579259: _DATA_
+2018-03-28T17:03:18.579428+00:00 app[web.1]: 2018-03-28 17:03:18.579379: {
+  "entry": [
+    {
+      "messaging": [
+        {
+          "timestamp": 1522255305766,
+          "message": {
+            "text": "oi",
+            "mid": "mid.$cAADUWA1ifQ9onsHkJlibXyano-P5",
+            "seq": 155161
+          },
+          "recipient": {
+            "id": "156865671689576"
+          },
+          "sender": {
+            "id": "1516033215112117"
+          }
+        }
+      ],
+      "id": "156865671689576",
+      "time": 1522256593154
+    }
+  ],
+  "object": "page"
+}
+2018-03-28T17:03:18.579475+00:00 app[web.1]: 2018-03-28 17:03:18.579440: sending message to 1516033215112117: BOT :D
+2018-03-28T17:03:19.080597+00:00 heroku[router]: at=info method=POST path="/" host=powerful-stream-61633.herokuapp.com request_id=b1410c0c-8fa7-4209-9d9a-3cb7d7aebf3c fwd="31.13.113.174" dyno=web.1 connect=1ms service=501ms status=200 bytes=161 protocol=https
+2018-03-28T17:03:19.839518+00:00 app[web.1]: 2018-03-28 17:03:19.839403: {
+  "entry": [
+    {
+      "messaging": [
+        {
+          "timestamp": 1522255325329,
+          "message": {
+            "text": "oi",
+            "mid": "mid.$cAADUWA1ifQ9onsIwkVibXznDBGtZ",
+            "seq": 155162
+          },
+          "recipient": {
+            "id": "156865671689576"
+          },
+          "sender": {
+            "id": "1516033215112117"
+          }
+        }
+      ],
+      "id": "156865671689576",
+      "time": 1522256599414
+    }
+  ],
+  "object": "page"
+}
+2018-03-28T17:03:19.839602+00:00 app[web.1]: 2018-03-28 17:03:19.839518: sending message to 1516033215112117: BOT :D
+2018-03-28T17:03:20.283762+00:00 heroku[router]: at=info method=POST path="/" host=powerful-stream-61633.herokuapp.com request_id=95e68961-7221-4ee2-b863-466c2bea697b fwd="31.13.113.20" dyno=web.1 connect=0ms service=445ms status=200 bytes=161 protocol=https
+2018-03-28T17:03:21.085270+00:00 app[web.1]: 2018-03-28 17:03:21.085176: _DATA_
+2018-03-28T17:03:21.085387+00:00 app[web.1]: 2018-03-28 17:03:21.085323: {"entry": [{"messaging": [{"timestamp": 1522255873878, "message": {"text": "oi", "mid": "mid.$cAADUWA1ifQ9onsqPVlibYVF1uO18", "seq": 155163}, "recipient": {"id": "156865671689576"}, "sender": {"id": "1516033215112117"}}], "id": "156865671689576", "time": 1522256600610}], "object": "page"}
+2018-03-28T17:03:21.085468+00:00 app[web.1]: 2018-03-28 17:03:21.085401: sending message to 1516033215112117: BOT :D
+2018-03-28T17:03:21.526735+00:00 heroku[router]: at=info method=POST path="/" host=powerful-stream-61633.herokuapp.com request_id=180ac65d-8b2b-4805-8399-5f2e19ad4fa3 fwd="31.13.111.84" dyno=web.1 connect=0ms service=443ms status=200 bytes=161 protocol=https
+2018-03-28T17:03:22.334468+00:00 app[web.1]: 2018-03-28 17:03:22.334381: _DATA_
+2018-03-28T17:03:22.334636+00:00 app[web.1]: 2018-03-28 17:03:22.334548: {"entry": [{"messaging": [{"timestamp": 1522256303084, "message": {"text": "oi", "mid": "mid.$cAADUWA1ifQ9ontEb7FibYvSV7af2", "seq": 155164}, "recipient": {"id": "156865671689576"}, "sender": {"id": "1516033215112117"}}], "id": "156865671689576", "time": 1522256601849}], "object": "page"}
+2018-03-28T17:03:22.334783+00:00 app[web.1]: 2018-03-28 17:03:22.334678: sending message to 1516033215112117: BOT :D
+2018-03-28T17:03:22.789133+00:00 heroku[router]: at=info method=POST path="/" host=powerful-stream-61633.herokuapp.com request_id=78e78e51-7ce3-43df-a786-89c922e201c0 fwd="31.13.113.80" dyno=web.1 connect=1ms service=456ms status=200 bytes=161 protocol=https
+2018-03-28T17:03:23.580720+00:00 app[web.1]: 2018-03-28 17:03:23.580633: _DATA_
+2018-03-28T17:03:23.580800+00:00 app[web.1]: 2018-03-28 17:03:23.580741: {"entry": [{"messaging": [{"timestamp": 1522256353839, "message": {"text": "lop", "mid": "mid.$cAADUWA1ifQ9ontHiL1ibYyYqriAg", "seq": 155165}, "recipient": {"id": "156865671689576"}, "sender": {"id": "1516033215112117"}}], "id": "156865671689576", "time": 1522256603133}], "object": "page"}
+2018-03-28T17:03:23.580848+00:00 app[web.1]: 2018-03-28 17:03:23.580806: sending message to 1516033215112117: BOT :D
+2018-03-28T17:03:24.034920+00:00 heroku[router]: at=info method=POST path="/" host=powerful-stream-61633.herokuapp.com request_id=8133ad37-a248-4582-9776-cb3876fb5c73 fwd="31.13.113.176" dyno=web.1 connect=0ms service=455ms status=200 bytes=161 protocol=https
+2018-03-28T17:03:24.829753+00:00 app[web.1]: 2018-03-28 17:03:24.829632: _DATA_
+2018-03-28T17:03:24.829978+00:00 app[web.1]: 2018-03-28 17:03:24.829892: {"entry": [{"messaging": [{"timestamp": 1522256537389, "message": {"text": "lpo4", "mid": "mid.$cAADUWA1ifQ9ontSvLVibY9lV-r4e", "seq": 155166}, "recipient": {"id": "156865671689576"}, "sender": {"id": "1516033215112117"}}], "id": "156865671689576", "time": 1522256604379}], "object": "page"}
+2018-03-28T17:03:24.830108+00:00 app[web.1]: 2018-03-28 17:03:24.829996: sending message to 1516033215112117: BOT :D
+2018-03-28T17:03:25.344225+00:00 heroku[router]: at=info method=POST path="/" host=powerful-stream-61633.herokuapp.com request_id=4ecc2b5f-34d4-4d44-8a44-a13b225d0c8f fwd="31.13.106.117" dyno=web.1 connect=1ms service=517ms status=200 bytes=161 protocol=htt
