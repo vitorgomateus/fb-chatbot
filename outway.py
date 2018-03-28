@@ -63,7 +63,7 @@ def send_quick_reply( text_str, set_num, recipient_id):
       },
       {
         "content_type":"location",
-        "title":"where do I send te nukes?"
+        "title":"where do I send te nukes?",
         "image_url":"https://cdn1.iconfinder.com/data/icons/military-filled/64/army-09-48.png"
       },
       {
