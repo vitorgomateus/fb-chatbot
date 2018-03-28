@@ -19,7 +19,7 @@ def send_message(message_text, recipient_id, title_arr, img_arr, url_arr):
         arr_elements = []
         #if(!(len(title_arr)==len(img_arr)==len(url_arr))):
         #    logar("length of arrays in outway.py->send_webview is in discord")
-        for i in range(0, len(title_arr):
+        for i in range(0, len(title_arr)):
             element = {
                         "title":title_arr[i],
                         "image_url":img_arr[i],
