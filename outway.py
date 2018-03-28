@@ -90,10 +90,10 @@ def send_quick_reply( text_str, set_num, recipient_id):
         "Content-Type": "application/json"
     }
 
-    wv = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
-    if wv.status_code != 200:
-        logar(wv.status_code)
-        logar(wv.text)
+    rq = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
+    if rq.status_code != 200:
+        logar(rq.status_code)
+        logar(rq.text)
 # def senda_message(recipient_id, message_content):
 
     
