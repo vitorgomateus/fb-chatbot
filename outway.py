@@ -7,7 +7,10 @@ from util import logar
 #                message_text = if isWebView ? 0 : text
 def send_message(message_text, recipient_id, title_arr, img_arr, url_arr):
     send_object = "there seems to be an error"
-    
+    logar("title_arr")
+    logar(title_arr[1])
+    logar(title_arr)
+
     if(message_text==0):
     #                                                     -------------------------------Web View
         logar("SEND_WEBVIEW")

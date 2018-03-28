@@ -41,7 +41,7 @@ def get_send_products(category, recipient):
     arr_link= [response_products[0]["permalink"], response_products[1]["permalink"], response_products[2]["permalink"]]
     
     logar("arr_title")
-    logar(arr_title)
+    logar(arr_title[1])
     logar("arr_image")
     logar(arr_image)
     logar("arr_link")
