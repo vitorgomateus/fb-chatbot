@@ -11,7 +11,7 @@ import string
 
 def get_send_products(category, recipient):
     
-    max_nof = 3
+    max_nop = 3
 
     #---------------------------------------------------------------------------------WOOCOMMERCE PyPa
     logar("REQUEST PRODUCTS *WC_PyPa* cat={cate}".format(cate=category))
