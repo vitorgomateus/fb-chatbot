@@ -56,6 +56,17 @@ heroku open
 heroku config:add VERIFY_TOKEN=your_verification_token_here
 
 
+# About Conversations flowgram
+
+cliente catching flow:
+-Awereness
+-Cosideration
+-Purchase
+-Retention
+-Advocacy
+
+
+
 # Facebook Messenger Bot
 This is a simple python template that uses Flask to build a webhook for Facebook's Messenger Bot API.
 

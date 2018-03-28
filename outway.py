@@ -4,58 +4,31 @@ from flask import Flask, request
 import json
 from util import logar
 
-#                message_text = if isWebView ? 0 : text
-def send_message(message_text, recipient_id, title_arr, img_arr, url_arr):
+
+def send_message(message_content, recipient_id):
     send_object = "there seems to be an error"
 
-    if(message_text==0):
-    #                                                     -------------------------------Web View
+    logar("OOO - string type - ow_sm - OOO")
+    logar(message_content)
+    logar(isinstance(message_content, basestring))
+    if isinstance(message_content, basestring):
+        #                                                     -------------------------------Normal Text
+        logar("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_content))
+        send_object = { "text": message_content }
+   
+    else:
+     #                                                     -------------------------------Web View
         logar("SEND_WEBVIEW")
-
-        logar("title_arr")
-        logar(title_arr[1])
-        logar(title_arr)
-        element = {}
-        arr_elements = []
-        #if(!(len(title_arr)==len(img_arr)==len(url_arr))):
-        #    logar("length of arrays in outway.py->send_webview is in discord")
-        for i in range(0, len(title_arr)):
-            element = {
-                        "title":title_arr[i],
-                        "image_url":img_arr[i],
-                        "subtitle":"",
-                        "buttons":[
-                            {
-                                "type":"web_url",
-                                "url":url_arr[i],
-                                "title":"Read More"
-                              }          
-                        ]      
-                      }
-            logar("element{num}".format(num=i))
-            logar(element)
-            arr_elements.append(element)
-
-            logar("arr_elements")
-            logar(arr_elements)
-            #['buttons', 'subtitle', 'image_url', 'title', 'buttons', 'subtitle', 'image_url', 'title', 'buttons', 'subtitle', 'image_url', 'title']
 
         send_object ={
             "attachment":{
                 "type":"template",
                 "payload":{
                     "template_type":"generic",
-                    "elements": arr_elements
+                    "elements": message_content
                 }
             }
         }
-            
-
-    else:
-    #                                                     -------------------------------Normal Text
-        logar("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_text))
-        send_object = { "text": message_text }
-
     #                                                     -------------------------------Sending
     data = json.dumps({
         "recipient": {
@@ -75,7 +48,7 @@ def send_message(message_text, recipient_id, title_arr, img_arr, url_arr):
         logar(wv.status_code)
         logar(wv.text)
 
-# def senda_message(recipient_id, message_text):
+# def senda_message(recipient_id, message_content):
 
     
 
