@@ -74,7 +74,7 @@ def webhook():
                             if message_text == "produtos":
                                 get_send_products(0, sender_id)
                             else:
-                               send_message(sender_id, "BOT :D")
+                               send_message("BOT :D", sender_id, [], [], [])
                                pass
 
                     if messaging_event.get("request_thread_control"):  # ADMIN requested control
