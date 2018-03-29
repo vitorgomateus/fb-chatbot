@@ -41,7 +41,8 @@ O - Interpretar texto
 O - bot reage a várias mensagens em simultaneo :S
 
 
-O - ITERATE!!!
+O - usar google pre-filled link para registar friends através do messenger - REQUIRES DB
+	"https://docs.google.com/forms/d/e/1FAIpQLSd3JFWwtKtPgZk1JjfQ1ygUcBBBAl3xGVlyqBKTnIn36KShyA/viewform?usp=pp_url&entry.539221635=your+name&entry.560854717=2018-05-21&entry.122999599=6665556565&entry.52689714=5454dfdfd54&entry.686443584=gfgj&entry.693683744=hjdghjfgh&entry.1380086835=fhgjfhgj&entry.816296692=fghjfghjfgh&entry.1556765854=Inclui+lugares+a+visitar?&entry.426540354=Adultos&entry.400601593=1+hora&entry.235041046=ghjfhj&entry.1237964408=fghjfgh&entry.1573059110=fhgjfghj&entry.488807207=Portugu%C3%AAs&entry.488807207=Espanhol"
 
 -> It's going good and looking alive ;)
 
@@ -55,10 +56,36 @@ git push heroku master
 heroku open
 heroku config:add VERIFY_TOKEN=your_verification_token_here
 
+--------------------------
+iterate through dicts with dicts:
+def myprint(d):
+  for k, v in d.items():
+    if isinstance(v, dict):
+      myprint(v)
+    else:
+      print("{0} : {1}".format(k, v))
+
 
 # About Conversations flowgram
 
-cliente retention flow:
+Persistent menu:
+	1- About Us:
+		1.1 - What do we do?
+		1.2 - What is a Friend?
+		1.3 - Where do we have programs?
+		1.4 - visit website:
+	2- How to's:
+		2.1 - How to be a Friend?
+		2.2 - how to book a program?
+	3- Things I can do:
+		3.1 - Get programs
+		3.2 - Pass to a human
+		3.3 - Get programs by category:	---		X
+		3.4 - Book a programs 			---		X
+		3.5 - Apply to be a friends 	---		X
+
+
+Client retention flow:
 -Awereness
 -Cosideration
 -Purchase

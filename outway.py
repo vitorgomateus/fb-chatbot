@@ -8,9 +8,6 @@ from util import logar
 def send_message(message_content, recipient_id):
     send_object = "there seems to be an error"
 
-    logar("OOO - string type - ow_sm - OOO")
-    logar(message_content)
-    logar(isinstance(message_content, basestring))
     if isinstance(message_content, basestring):
         #                                                     -------------------------------Normal Text
         logar("sending message to {recipient}: {text}".format(recipient=recipient_id, text=message_content))
@@ -67,10 +64,10 @@ def send_quick_reply( text_str, set_num, recipient_id):
         "image_url":"https://cdn1.iconfinder.com/data/icons/military-filled/64/army-09-48.png"
       },
       {
-      "content_type":"text",
-      "title":"hit me please!!!",
-      "payload":"QR_COF",
-      "image_url":"https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/32x32/diagram_v2-23.png"
+          "content_type":"text",
+          "title":"hit me please!!!",
+          "payload":"QR_COF",
+          "image_url":"https://cdn3.iconfinder.com/data/icons/diagram_v2/PNG/32x32/diagram_v2-23.png"
       }
     ]
 
