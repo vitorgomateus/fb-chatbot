@@ -1,4 +1,5 @@
-
+import os
+import requests
 # Persistent menu:
 # 	1- About Us:
 # 		1.1 - What do we do?
@@ -42,7 +43,7 @@ def set_persistent_menu():
 	            }
 	          ]
 	        },{
-	          "title":"How to's",
+	          "title":"How to's:",
 	          "type":"nested",
 	          "call_to_actions":[
 	            {
