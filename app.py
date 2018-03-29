@@ -7,7 +7,7 @@ import time
 import requests
 from flask import Flask, request
 
-from setway import set_persistent_menu
+#from setway import set_persistent_menu
 from getway import get_send_products
 from outway import send_message, send_quick_reply, get_user_name
 from util import logar
@@ -76,9 +76,8 @@ def webhook():
                                 get_send_products(0, sender_id)
                             elif message_text =="qr":
                                 send_quick_reply("Reply to this", 0, sender_id)
-                            elif message_text == "set12345setmenu":
-                                set_persistent_menu()
-                            elif message_text == name:
+                            
+                            elif message_text == "name":
                                 nome = get_user_name(sender_id)
                                 send_message("You are {usna}".format(usna=nome), sender_id)
                             else:
