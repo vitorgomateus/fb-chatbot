@@ -18,7 +18,7 @@ def set_persistent_menu():
 		"persistent_menu":[
 		{
 			"locale":"default",
-			"composer_input_disabled": true,
+			"composer_input_disabled": True,
 			"call_to_actions":[
 			{
 				"title":"About Us",
