@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+from util import logar
 # Persistent menu:
 # 	1- About Us:
 # 		1.1 - What do we do?
