@@ -91,18 +91,25 @@ def send_quick_reply( text_str, set_num, recipient_id):
     if rq.status_code != 200:
         logar(rq.status_code)
         logar(rq.text)
-# def senda_message(recipient_id, message_content):
 
-    
+def get_user_name(user_id):
 
-#     params = {
-#         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
-#     }
-#     headers = {
-#         "Content-Type": "application/json"
-#     }
+#"https://graph.facebook.com/v2.6/<PSID>?fields=first_name,last_name,profile_pic&access_token=<PAGE_ACCESS_TOKEN>"
+    params = {
+        "access_token": os.environ["PAGE_ACCESS_TOKEN"],
+        "fields":"first_name"
+    }
+    headers = {
+        "Content-Type": "application/json"
+    }
     
-#     r = requests.post("https://graph.facebook.com/v2.6/me/messages", params=params, headers=headers, data=data)
-#     if r.status_code != 200:
-#         logar(r.status_code)
-#         logar(r.text)
+    u = requests.get("https://graph.facebook.com/v2.6/{userPSID}".format(userPSID=user_id), params=params, headers=headers, data=data)
+    if u.status_code != 200:
+        logar(u.status_code)
+        logar(u.text)
+
+    user=u.json()
+    logar("OOO - user name")
+    logar(user["first_name"])
+    return user["first_name"]
+        

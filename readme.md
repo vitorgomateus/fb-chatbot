@@ -44,6 +44,7 @@ O - bot reage a várias mensagens em simultaneo :S
 O - usar google pre-filled link para registar friends através do messenger - REQUIRES DB
 	"https://docs.google.com/forms/d/e/1FAIpQLSd3JFWwtKtPgZk1JjfQ1ygUcBBBAl3xGVlyqBKTnIn36KShyA/viewform?usp=pp_url&entry.539221635=your+name&entry.560854717=2018-05-21&entry.122999599=6665556565&entry.52689714=5454dfdfd54&entry.686443584=gfgj&entry.693683744=hjdghjfgh&entry.1380086835=fhgjfhgj&entry.816296692=fghjfghjfgh&entry.1556765854=Inclui+lugares+a+visitar?&entry.426540354=Adultos&entry.400601593=1+hora&entry.235041046=ghjfhj&entry.1237964408=fghjfgh&entry.1573059110=fhgjfghj&entry.488807207=Portugu%C3%AAs&entry.488807207=Espanhol"
 
+O - Get more products
 -> It's going good and looking alive ;)
 
 heroku apps
@@ -68,7 +69,7 @@ def myprint(d):
 
 # About Conversations flowgram
 
-Persistent menu:
+NO!!! Persistent menu:
 	1- About Us:
 		1.1 - What do we do?
 		1.2 - What is a Friend?
