@@ -14,66 +14,66 @@ import requests
 # 		3.2 - Pass to a human
 def set_persistent_menu():
 	data = json.dumps({
-	  "persistent_menu":[
-	    {
-	      "locale":"default",
-	      "composer_input_disabled": true,
-	      "call_to_actions":[
-	        {
-	          "title":"About Us",
-	          "type":"nested",
-	          "call_to_actions":[
-	            {
-	              "title":"What is a Friend?",
-	              "type":"postback",
-	              "payload":"<PM_1.1>"
-	            },{
-	              "title":"Where do we have programs?",
-	              "type":"postback",
-	              "payload":"<PM_1.2>"
-	            },{
-	              "title":"What do we do?",
-	              "type":"postback",
-	              "payload":"<PM_1.3>"
-	            },
-	            {
-	              "type":"web_url",
-	              "title":"visit",
-	              "url":"https://www.myfriendsinportugal.com"
-	            }
-	          ]
-	        },{
-	          "title":"How to's:",
-	          "type":"nested",
-	          "call_to_actions":[
-	            {
-	              "title":"How to join as a Friend?",
-	              "type":"postback",
-	              "payload":"<PM_2.1>"
-	            },{
-	              "title":"How to book a program?",
-	              "type":"postback",
-	              "payload":"<PM_2.2>"
-	            }
-	          ]
-	        },{
-	          "title":"Things I can do:",
-	          "type":"nested",
-	          "call_to_actions":[
-	            {
-	              "title":"Get the latest programs",
-	              "type":"postback",
-	              "payload":"<PM_3.1>"
-	            },{
-	              "title":"Pass to a human...",
-	              "type":"postback",
-	              "payload":"<PM_3.2>"
-	            }
-	          ]
-	        }
-	      ]
-	    }
-	  ]
+		"persistent_menu":[
+		{
+			"locale":"default",
+			"composer_input_disabled": true,
+			"call_to_actions":[
+			{
+				"title":"About Us",
+				"type":"nested",
+				"call_to_actions":[
+				{
+					"title":"What is a Friend?",
+					"type":"postback",
+					"payload":"<PM_1.1>"
+				},{
+					"title":"Where do we have programs?",
+					"type":"postback",
+					"payload":"<PM_1.2>"
+				},{
+					"title":"What do we do?",
+					"type":"postback",
+					"payload":"<PM_1.3>"
+				},
+				{
+					"type":"web_url",
+					"title":"visit",
+					"url":"https://www.myfriendsinportugal.com"
+				}
+				]
+				},{
+				"title":"How to's:",
+				"type":"nested",
+				"call_to_actions":[
+				{
+					"title":"How to join as a Friend?",
+					"type":"postback",
+					"payload":"<PM_2.1>"
+				},{
+					"title":"How to book a program?",
+					"type":"postback",
+					"payload":"<PM_2.2>"
+				}
+				]
+				},{
+				"title":"Things I can do:",
+				"type":"nested",
+				"call_to_actions":[
+				{
+					"title":"Get the latest programs",
+					"type":"postback",
+					"payload":"<PM_3.1>"
+				},{
+					"title":"Pass to a human...",
+					"type":"postback",
+					"payload":"<PM_3.2>"
+				}
+				]
+			}
+			]
+		}
+		]
 	})
     params = {
         "access_token": os.environ["PAGE_ACCESS_TOKEN"]
