@@ -75,16 +75,14 @@ def set_persistent_menu():
 		}
 		]
 	})
-    params = {
-        "access_token": os.environ["PAGE_ACCESS_TOKEN"]
-    }
-    headers = {
-        "Content-Type": "application/json"
-    }
+	params = {
+		"access_token": os.environ["PAGE_ACCESS_TOKEN"]
+	}
+	headers = {
+		"Content-Type": "application/json"
+	}
 
-    mp = requests.post("https://graph.facebook.com/v2.6/me/messenger_profile", params=params, headers=headers, data=data)
-    if mp.status_code != 200:
-        logar(mp.status_code)
-        logar(mp.text)
-
-
+	mp = requests.post("https://graph.facebook.com/v2.6/me/messenger_profile", params=params, headers=headers, data=data)
+	if mp.status_code != 200:
+		logar(mp.status_code)
+		logar(mp.text)
