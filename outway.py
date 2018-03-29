@@ -103,7 +103,7 @@ def get_user_name(user_id):
         "Content-Type": "application/json"
     }
     
-    u = requests.get("https://graph.facebook.com/v2.6/{userPSID}".format(userPSID=user_id), params=params, headers=headers, data=data)
+    u = requests.get("https://graph.facebook.com/v2.6/{userPSID}".format(userPSID=user_id), params=params, headers=headers)
     if u.status_code != 200:
         logar(u.status_code)
         logar(u.text)
