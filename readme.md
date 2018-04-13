@@ -3,17 +3,16 @@
 	x-> handover protocol aplicado
 	x-> faz request a informação da REST API do wooCommerce
 	x-> consegue enviar webviews com sucesso
-	o-> quick replies
-	o-> writting smtg
+	x-> get user name
+	x-> quick replies
+	o-> writting smtg - https://developers.facebook.com/docs/messenger-platform/send-messages/sender-actions#supported_actions
 	o-> interpretar texto
 	o-> guardar informação
 
-----
 
--to get events from manned messages of my page, I apparently need to subscribe the bot to: messages; messaging_handover; message_echoes; standby
-
--https://pypi.python.org/pypi/WooCommerce
-	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
+O - colocar nome do Friend na WebView
+O - Get more products (destroy WV?)
+= - line break('\u000A','<center></center>', '\n', '\n\r')
 
 O - BD
 https://pypi.python.org/pypi/python-firebase/1.2	
@@ -44,8 +43,16 @@ O - bot reage a várias mensagens em simultaneo :S
 O - usar google pre-filled link para registar friends através do messenger - REQUIRES DB
 	"https://docs.google.com/forms/d/e/1FAIpQLSd3JFWwtKtPgZk1JjfQ1ygUcBBBAl3xGVlyqBKTnIn36KShyA/viewform?usp=pp_url&entry.539221635=your+name&entry.560854717=2018-05-21&entry.122999599=6665556565&entry.52689714=5454dfdfd54&entry.686443584=gfgj&entry.693683744=hjdghjfgh&entry.1380086835=fhgjfhgj&entry.816296692=fghjfghjfgh&entry.1556765854=Inclui+lugares+a+visitar?&entry.426540354=Adultos&entry.400601593=1+hora&entry.235041046=ghjfhj&entry.1237964408=fghjfgh&entry.1573059110=fhgjfghj&entry.488807207=Portugu%C3%AAs&entry.488807207=Espanhol"
 
-O - Get more products
--> It's going good and looking alive ;)
+
+----
+
+-to get events from manned messages of my page, I apparently need to subscribe the bot to: messages; messaging_handover; message_echoes; standby
+
+-https://pypi.python.org/pypi/WooCommerce
+	http://woocommerce.github.io/woocommerce-rest-api-docs/?python#list-all-products
+
+
+----- > It's going good and looking alive ;)
 
 heroku apps
 heroku create
